@@ -3,6 +3,8 @@ name: Fetch Data
 on:
   schedule:
     - cron:  '0 5 * * SUN' # minute 0, hour 5 every sunday; must quote because *
+  # This won't cause infinite loop on push
+  # https://github.com/stefanzweifel/git-auto-commit-action#commits-of-this-action-do-not-trigger-new-workflow-runs
   push:
     branches:
       - owo
