@@ -5,7 +5,6 @@ import chalk from 'chalk';
 import jsdom from 'jsdom';
 import punycode from 'punycode';
 import mapLimit from 'async/mapLimit.js';
-import concordance from 'concordance';
 const { JSDOM } = jsdom;
 const readFileAsync = promisify(readFile);
 
@@ -20,16 +19,6 @@ function diffArrayUnordered(actual, expected) {
     .filter(i => !actual.includes(i))
     .map(i => `-${chalk.red(i)}`)
     .join(', ');
-}
-
-function diffToStr(actual, expected) {
-  const actualDescriptor = concordance.describe(actual);
-  const expectedDescriptor = concordance.describe(expected);
-  return concordance.diffDescriptors(actualDescriptor, expectedDescriptor);
-  // const equal = concordance.compareDescriptors(actualDescriptor, expectedDescriptor);
-  // if(equal) {
-  //   return '-- No Differences --';
-  // }
 }
 
 Array.prototype.unique = function() {
