@@ -1,0 +1,26 @@
+{
+  "name": "tld-data-extended",
+  "version": "0.1.0",
+  "description": "Data about TLDs, with more _brand_",
+  "author": {
+    "name": "cobertos",
+    "email": "me+npm@cobertos.com",
+    "url": "http://cobertos.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cobertos/tld-data"
+  },
+  "scripts": {
+    "fetch": "node --experimental-modules fetchData.mjs"
+  },
+  "dependencies": {
+    "async": "^3.2.0",
+    "concordance": "^5.0.1",
+    "chalk": "^4.1.0",
+    "jsdom": "^16.4.0",
+    "node-fetch": "^2.6.1",
+    "punycode": "^2.1.1"
+  },
+  "license": "MIT"
+}
