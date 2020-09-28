@@ -1,0 +1,33 @@
+name: Fetch Data
+
+on:
+  schedule:
+    - cron:  '0 5 * * SUN' # minute 0, hour 5 every sunday; must quote because *
+  push:
+    branches:
+      - owo
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout repo @ latest release
+      - uses: actions/checkout@v2
+      # Install languages
+      - name: Set up Nodejs 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      # Install dependencies
+      - name: npm ci
+        run: npm ci
+      # Fetch data
+      - name: npm run fetch
+        run: npm run fetch
+      # Commit back
+      - name: git commit back
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Apply automatic changes
+          file_pattern: tldData.json
+          commit_user_name: Owo Update
