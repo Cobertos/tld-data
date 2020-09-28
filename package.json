@@ -12,7 +12,7 @@
     "url": "https://github.com/Cobertos/tld-data"
   },
   "scripts": {
-    "fetch": "node --experimental-modules fetchData.mjs"
+    "fetch": "node --experimental-modules fetchData.mjs tldData.json"
   },
   "dependencies": {
     "async": "^3.2.0",

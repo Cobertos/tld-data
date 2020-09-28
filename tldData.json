@@ -1,0 +1,8430 @@
+[
+  {
+    "tld": "aaa",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "aarp",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "abarth",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "abb",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "abbott",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "abbvie",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "abc",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "able",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "abogado",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "abudhabi",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ac",
+    "category": "country-code"
+  },
+  {
+    "tld": "academy",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "accenture",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "accountant",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "accountants",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "aco",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "actor",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ad",
+    "category": "country-code"
+  },
+  {
+    "tld": "adac",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "ads",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "adult",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ae",
+    "category": "country-code"
+  },
+  {
+    "tld": "aeg",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "aero",
+    "category": "sponsored",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "aetna",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "af",
+    "category": "country-code"
+  },
+  {
+    "tld": "afamilycompany",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "afl",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "africa",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ag",
+    "category": "country-code"
+  },
+  {
+    "tld": "agakhan",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "agency",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ai",
+    "category": "country-code"
+  },
+  {
+    "tld": "aig",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "airbus",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "airforce",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "airtel",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "akdn",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "al",
+    "category": "country-code"
+  },
+  {
+    "tld": "alfaromeo",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "alibaba",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "alipay",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "allfinanz",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "allstate",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ally",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "alsace",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "alstom",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "am",
+    "category": "country-code"
+  },
+  {
+    "tld": "amazon",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "americanexpress",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "americanfamily",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "amex",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "amfam",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "amica",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "amsterdam",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "analytics",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "android",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "anquan",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "anz",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ao",
+    "category": "country-code"
+  },
+  {
+    "tld": "aol",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "apartments",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "app",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "apple",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "aq",
+    "category": "country-code"
+  },
+  {
+    "tld": "aquarelle",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ar",
+    "category": "country-code"
+  },
+  {
+    "tld": "arab",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "aramco",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "archi",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "army",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "arpa",
+    "category": "infrastructure",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "art",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "arte",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "as",
+    "category": "country-code"
+  },
+  {
+    "tld": "asda",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "asia",
+    "category": "sponsored",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "associates",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "at",
+    "category": "country-code"
+  },
+  {
+    "tld": "athleta",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "attorney",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "au",
+    "category": "country-code"
+  },
+  {
+    "tld": "auction",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "audi",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "audible",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "audio",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "auspost",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "author",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "auto",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "autos",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "avianca",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "aw",
+    "category": "country-code"
+  },
+  {
+    "tld": "aws",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ax",
+    "category": "country-code"
+  },
+  {
+    "tld": "axa",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "az",
+    "category": "country-code"
+  },
+  {
+    "tld": "azure",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ba",
+    "category": "country-code"
+  },
+  {
+    "tld": "baby",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "baidu",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "banamex",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bananarepublic",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "band",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bank",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "bar",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "barcelona",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "barclaycard",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "barclays",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "barefoot",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bargains",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "baseball",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "basketball",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bauhaus",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bayern",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bb",
+    "category": "country-code"
+  },
+  {
+    "tld": "bbc",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bbt",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bbva",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bcg",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bcn",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bd",
+    "category": "country-code"
+  },
+  {
+    "tld": "be",
+    "category": "country-code"
+  },
+  {
+    "tld": "beats",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "beauty",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "beer",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bentley",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "berlin",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "best",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bestbuy",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bet",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bf",
+    "category": "country-code"
+  },
+  {
+    "tld": "bg",
+    "category": "country-code"
+  },
+  {
+    "tld": "bh",
+    "category": "country-code"
+  },
+  {
+    "tld": "bharti",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bi",
+    "category": "country-code"
+  },
+  {
+    "tld": "bible",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bid",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bike",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bing",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bingo",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bio",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "biz",
+    "category": "generic-restricted",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "bj",
+    "category": "country-code"
+  },
+  {
+    "tld": "black",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "blackfriday",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "blockbuster",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "blog",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bloomberg",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "blue",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bm",
+    "category": "country-code"
+  },
+  {
+    "tld": "bms",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bmw",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bn",
+    "category": "country-code"
+  },
+  {
+    "tld": "bnpparibas",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bo",
+    "category": "country-code"
+  },
+  {
+    "tld": "boats",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "boehringer",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bofa",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bom",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bond",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "boo",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "book",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "booking",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bosch",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bostik",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "boston",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bot",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "boutique",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "box",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "br",
+    "category": "country-code"
+  },
+  {
+    "tld": "bradesco",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bridgestone",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "broadway",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "broker",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "brother",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "brussels",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bs",
+    "category": "country-code"
+  },
+  {
+    "tld": "bt",
+    "category": "country-code"
+  },
+  {
+    "tld": "budapest",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bugatti",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "build",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "builders",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "business",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "buy",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "buzz",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "bv",
+    "category": "country-code"
+  },
+  {
+    "tld": "bw",
+    "category": "country-code"
+  },
+  {
+    "tld": "by",
+    "category": "country-code"
+  },
+  {
+    "tld": "bz",
+    "category": "country-code"
+  },
+  {
+    "tld": "bzh",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "ca",
+    "category": "country-code"
+  },
+  {
+    "tld": "cab",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cafe",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cal",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "call",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "calvinklein",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cam",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "camera",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "camp",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cancerresearch",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "canon",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "capetown",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "capital",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "capitalone",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "car",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "caravan",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cards",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "care",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "career",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "careers",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cars",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "casa",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "case",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "caseih",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cash",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "casino",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cat",
+    "category": "sponsored",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "catering",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "catholic",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "cba",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cbn",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cbre",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cbs",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cc",
+    "category": "country-code"
+  },
+  {
+    "tld": "cd",
+    "category": "country-code"
+  },
+  {
+    "tld": "ceb",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "center",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ceo",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cern",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cf",
+    "category": "country-code"
+  },
+  {
+    "tld": "cfa",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cfd",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cg",
+    "category": "country-code"
+  },
+  {
+    "tld": "ch",
+    "category": "country-code"
+  },
+  {
+    "tld": "chanel",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "channel",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "charity",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "chase",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "chat",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cheap",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "chintai",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "christmas",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "chrome",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "church",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ci",
+    "category": "country-code"
+  },
+  {
+    "tld": "cipriani",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "circle",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cisco",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "citadel",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "citi",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "citic",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "city",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cityeats",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ck",
+    "category": "country-code"
+  },
+  {
+    "tld": "cl",
+    "category": "country-code"
+  },
+  {
+    "tld": "claims",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cleaning",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "click",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "clinic",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "clinique",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "clothing",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cloud",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "club",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "clubmed",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cm",
+    "category": "country-code"
+  },
+  {
+    "tld": "cn",
+    "category": "country-code"
+  },
+  {
+    "tld": "co",
+    "category": "country-code"
+  },
+  {
+    "tld": "coach",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "codes",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "coffee",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "college",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cologne",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "com",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "comcast",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "commbank",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "community",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "company",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "compare",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "computer",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "comsec",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "condos",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "construction",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "consulting",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "contact",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "contractors",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cooking",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cookingchannel",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cool",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "coop",
+    "category": "sponsored",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "corsica",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "country",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "coupon",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "coupons",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "courses",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cpa",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cr",
+    "category": "country-code"
+  },
+  {
+    "tld": "credit",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "creditcard",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "creditunion",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cricket",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "crown",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "crs",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cruise",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cruises",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "csc",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cu",
+    "category": "country-code"
+  },
+  {
+    "tld": "cuisinella",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cv",
+    "category": "country-code"
+  },
+  {
+    "tld": "cw",
+    "category": "country-code"
+  },
+  {
+    "tld": "cx",
+    "category": "country-code"
+  },
+  {
+    "tld": "cy",
+    "category": "country-code"
+  },
+  {
+    "tld": "cymru",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cyou",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "cz",
+    "category": "country-code"
+  },
+  {
+    "tld": "dabur",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "dad",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "dance",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "data",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "date",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "dating",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "datsun",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "day",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "dclk",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "dds",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "de",
+    "category": "country-code"
+  },
+  {
+    "tld": "deal",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "dealer",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "deals",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "degree",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "delivery",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "dell",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "deloitte",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "delta",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "democrat",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "dental",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "dentist",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "desi",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "design",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "dev",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "dhl",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "diamonds",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "diet",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "digital",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "direct",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "directory",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "discount",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "discover",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "dish",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "diy",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "dj",
+    "category": "country-code"
+  },
+  {
+    "tld": "dk",
+    "category": "country-code"
+  },
+  {
+    "tld": "dm",
+    "category": "country-code"
+  },
+  {
+    "tld": "dnp",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "do",
+    "category": "country-code"
+  },
+  {
+    "tld": "docs",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "doctor",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "dog",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "domains",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "dot",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "download",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "drive",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "dtv",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "dubai",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "duck",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "dunlop",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "dupont",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "durban",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "dvag",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "dvr",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "dz",
+    "category": "country-code"
+  },
+  {
+    "tld": "earth",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "eat",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ec",
+    "category": "country-code"
+  },
+  {
+    "tld": "eco",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "edeka",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "edu",
+    "category": "sponsored",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "education",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ee",
+    "category": "country-code"
+  },
+  {
+    "tld": "eg",
+    "category": "country-code"
+  },
+  {
+    "tld": "email",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "emerck",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "energy",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "engineer",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "engineering",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "enterprises",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "epson",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "equipment",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "er",
+    "category": "country-code"
+  },
+  {
+    "tld": "ericsson",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "erni",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "es",
+    "category": "country-code"
+  },
+  {
+    "tld": "esq",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "estate",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "et",
+    "category": "country-code"
+  },
+  {
+    "tld": "etisalat",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "eu",
+    "category": "country-code"
+  },
+  {
+    "tld": "eurovision",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "eus",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "events",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "exchange",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "expert",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "exposed",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "express",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "extraspace",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fage",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fail",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fairwinds",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "faith",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "family",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fan",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fans",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "farm",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "farmers",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fashion",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fast",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fedex",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "feedback",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ferrari",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ferrero",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fi",
+    "category": "country-code"
+  },
+  {
+    "tld": "fiat",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fidelity",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fido",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "film",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "final",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "finance",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "financial",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fire",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "firestone",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "firmdale",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fish",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fishing",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fit",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fitness",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fj",
+    "category": "country-code"
+  },
+  {
+    "tld": "fk",
+    "category": "country-code"
+  },
+  {
+    "tld": "flickr",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "flights",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "flir",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "florist",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "flowers",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fly",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fm",
+    "category": "country-code"
+  },
+  {
+    "tld": "fo",
+    "category": "country-code"
+  },
+  {
+    "tld": "foo",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "food",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "foodnetwork",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "football",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ford",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "forex",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "forsale",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "forum",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "foundation",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fox",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fr",
+    "category": "country-code"
+  },
+  {
+    "tld": "free",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fresenius",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "frl",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "frogans",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "frontdoor",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "frontier",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ftr",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fujitsu",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fujixerox",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fun",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fund",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "furniture",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "futbol",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "fyi",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ga",
+    "category": "country-code"
+  },
+  {
+    "tld": "gal",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "gallery",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gallo",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gallup",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "game",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "games",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gap",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "garden",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gay",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gb",
+    "category": "country-code"
+  },
+  {
+    "tld": "gbiz",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gd",
+    "category": "country-code"
+  },
+  {
+    "tld": "gdn",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ge",
+    "category": "country-code"
+  },
+  {
+    "tld": "gea",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "gent",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "genting",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "george",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gf",
+    "category": "country-code"
+  },
+  {
+    "tld": "gg",
+    "category": "country-code"
+  },
+  {
+    "tld": "ggee",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gh",
+    "category": "country-code"
+  },
+  {
+    "tld": "gi",
+    "category": "country-code"
+  },
+  {
+    "tld": "gift",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gifts",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gives",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "giving",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gl",
+    "category": "country-code"
+  },
+  {
+    "tld": "glade",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "glass",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gle",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "global",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "globo",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gm",
+    "category": "country-code"
+  },
+  {
+    "tld": "gmail",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gmbh",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gmo",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gmx",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gn",
+    "category": "country-code"
+  },
+  {
+    "tld": "godaddy",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gold",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "goldpoint",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "golf",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "goo",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "goodyear",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "goog",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "google",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gop",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "got",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gov",
+    "category": "sponsored",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "gp",
+    "category": "country-code"
+  },
+  {
+    "tld": "gq",
+    "category": "country-code"
+  },
+  {
+    "tld": "gr",
+    "category": "country-code"
+  },
+  {
+    "tld": "grainger",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "graphics",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gratis",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "green",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gripe",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "grocery",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "group",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gs",
+    "category": "country-code"
+  },
+  {
+    "tld": "gt",
+    "category": "country-code"
+  },
+  {
+    "tld": "gu",
+    "category": "country-code"
+  },
+  {
+    "tld": "guardian",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gucci",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "guge",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "guide",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "guitars",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "guru",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "gw",
+    "category": "country-code"
+  },
+  {
+    "tld": "gy",
+    "category": "country-code"
+  },
+  {
+    "tld": "hair",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "hamburg",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "hangout",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "haus",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "hbo",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "hdfc",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "hdfcbank",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "health",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "healthcare",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "help",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "helsinki",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "here",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "hermes",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "hgtv",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "hiphop",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "hisamitsu",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "hitachi",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "hiv",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "hk",
+    "category": "country-code"
+  },
+  {
+    "tld": "hkt",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "hm",
+    "category": "country-code"
+  },
+  {
+    "tld": "hn",
+    "category": "country-code"
+  },
+  {
+    "tld": "hockey",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "holdings",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "holiday",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "homedepot",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "homegoods",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "homes",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "homesense",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "honda",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "horse",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "hospital",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "host",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "hosting",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "hot",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "hoteles",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "hotels",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "hotmail",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "house",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "how",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "hr",
+    "category": "country-code"
+  },
+  {
+    "tld": "hsbc",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ht",
+    "category": "country-code"
+  },
+  {
+    "tld": "hu",
+    "category": "country-code"
+  },
+  {
+    "tld": "hughes",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "hyatt",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "hyundai",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ibm",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "icbc",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ice",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "icu",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "id",
+    "category": "country-code"
+  },
+  {
+    "tld": "ie",
+    "category": "country-code"
+  },
+  {
+    "tld": "ieee",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "ifm",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ikano",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "il",
+    "category": "country-code"
+  },
+  {
+    "tld": "im",
+    "category": "country-code"
+  },
+  {
+    "tld": "imamat",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "imdb",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "immo",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "immobilien",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "in",
+    "category": "country-code"
+  },
+  {
+    "tld": "inc",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "industries",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "infiniti",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "info",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ing",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ink",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "institute",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "insurance",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "insure",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "int",
+    "category": "sponsored",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "intel",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "international",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "intuit",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "investments",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "io",
+    "category": "country-code"
+  },
+  {
+    "tld": "ipiranga",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "iq",
+    "category": "country-code"
+  },
+  {
+    "tld": "ir",
+    "category": "country-code"
+  },
+  {
+    "tld": "irish",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "is",
+    "category": "country-code"
+  },
+  {
+    "tld": "ismaili",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ist",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "istanbul",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "it",
+    "category": "country-code"
+  },
+  {
+    "tld": "itau",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "itv",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "iveco",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "jaguar",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "java",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "jcb",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "jcp",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "je",
+    "category": "country-code"
+  },
+  {
+    "tld": "jeep",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "jetzt",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "jewelry",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "jio",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "jll",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "jm",
+    "category": "country-code"
+  },
+  {
+    "tld": "jmp",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "jnj",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "jo",
+    "category": "country-code"
+  },
+  {
+    "tld": "jobs",
+    "category": "sponsored",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "joburg",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "jot",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "joy",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "jp",
+    "category": "country-code"
+  },
+  {
+    "tld": "jpmorgan",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "jprs",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "juegos",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "juniper",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "kaufen",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "kddi",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ke",
+    "category": "country-code"
+  },
+  {
+    "tld": "kerryhotels",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "kerrylogistics",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "kerryproperties",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "kfh",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "kg",
+    "category": "country-code"
+  },
+  {
+    "tld": "kh",
+    "category": "country-code"
+  },
+  {
+    "tld": "ki",
+    "category": "country-code"
+  },
+  {
+    "tld": "kia",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "kim",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "kinder",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "kindle",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "kitchen",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "kiwi",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "km",
+    "category": "country-code"
+  },
+  {
+    "tld": "kn",
+    "category": "country-code"
+  },
+  {
+    "tld": "koeln",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "komatsu",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "kosher",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "kp",
+    "category": "country-code"
+  },
+  {
+    "tld": "kpmg",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "kpn",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "kr",
+    "category": "country-code"
+  },
+  {
+    "tld": "krd",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "kred",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "kuokgroup",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "kw",
+    "category": "country-code"
+  },
+  {
+    "tld": "ky",
+    "category": "country-code"
+  },
+  {
+    "tld": "kyoto",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "kz",
+    "category": "country-code"
+  },
+  {
+    "tld": "la",
+    "category": "country-code"
+  },
+  {
+    "tld": "lacaixa",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lamborghini",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "lamer",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lancaster",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lancia",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "land",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "landrover",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lanxess",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lasalle",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lat",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "latino",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "latrobe",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "law",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lawyer",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lb",
+    "category": "country-code"
+  },
+  {
+    "tld": "lc",
+    "category": "country-code"
+  },
+  {
+    "tld": "lds",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "lease",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "leclerc",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "lefrak",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "legal",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lego",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lexus",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lgbt",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "li",
+    "category": "country-code"
+  },
+  {
+    "tld": "lidl",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "life",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lifeinsurance",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lifestyle",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lighting",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "like",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lilly",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "limited",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "limo",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lincoln",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "linde",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "link",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lipsy",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "live",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "living",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lixil",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lk",
+    "category": "country-code"
+  },
+  {
+    "tld": "llc",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "llp",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "loan",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "loans",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "locker",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "locus",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "loft",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lol",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "london",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lotte",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lotto",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "love",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lpl",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lplfinancial",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lr",
+    "category": "country-code"
+  },
+  {
+    "tld": "ls",
+    "category": "country-code"
+  },
+  {
+    "tld": "lt",
+    "category": "country-code"
+  },
+  {
+    "tld": "ltd",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ltda",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lu",
+    "category": "country-code"
+  },
+  {
+    "tld": "lundbeck",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lupin",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "luxe",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "luxury",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "lv",
+    "category": "country-code"
+  },
+  {
+    "tld": "ly",
+    "category": "country-code"
+  },
+  {
+    "tld": "ma",
+    "category": "country-code"
+  },
+  {
+    "tld": "macys",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "madrid",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "maif",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "maison",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "makeup",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "man",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "management",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "mango",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "map",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "market",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "marketing",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "markets",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "marriott",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "marshalls",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "maserati",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "mattel",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "mba",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "mc",
+    "category": "country-code"
+  },
+  {
+    "tld": "mckinsey",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "md",
+    "category": "country-code"
+  },
+  {
+    "tld": "me",
+    "category": "country-code"
+  },
+  {
+    "tld": "med",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "media",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "meet",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "melbourne",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "meme",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "memorial",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "men",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "menu",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "merckmsd",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "mg",
+    "category": "country-code"
+  },
+  {
+    "tld": "mh",
+    "category": "country-code"
+  },
+  {
+    "tld": "miami",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "microsoft",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "mil",
+    "category": "sponsored",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "mini",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "mint",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "mit",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "mitsubishi",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "mk",
+    "category": "country-code"
+  },
+  {
+    "tld": "ml",
+    "category": "country-code"
+  },
+  {
+    "tld": "mlb",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "mls",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "mm",
+    "category": "country-code"
+  },
+  {
+    "tld": "mma",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "mn",
+    "category": "country-code"
+  },
+  {
+    "tld": "mo",
+    "category": "country-code"
+  },
+  {
+    "tld": "mobi",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "mobile",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "moda",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "moe",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "moi",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "mom",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "monash",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "money",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "monster",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "mormon",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "mortgage",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "moscow",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "moto",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "motorcycles",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "mov",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "movie",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "mp",
+    "category": "country-code"
+  },
+  {
+    "tld": "mq",
+    "category": "country-code"
+  },
+  {
+    "tld": "mr",
+    "category": "country-code"
+  },
+  {
+    "tld": "ms",
+    "category": "country-code"
+  },
+  {
+    "tld": "msd",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "mt",
+    "category": "country-code"
+  },
+  {
+    "tld": "mtn",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "mtr",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "mu",
+    "category": "country-code"
+  },
+  {
+    "tld": "museum",
+    "category": "sponsored"
+  },
+  {
+    "tld": "mutual",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "mv",
+    "category": "country-code"
+  },
+  {
+    "tld": "mw",
+    "category": "country-code"
+  },
+  {
+    "tld": "mx",
+    "category": "country-code"
+  },
+  {
+    "tld": "my",
+    "category": "country-code"
+  },
+  {
+    "tld": "mz",
+    "category": "country-code"
+  },
+  {
+    "tld": "na",
+    "category": "country-code"
+  },
+  {
+    "tld": "nab",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "nagoya",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "name",
+    "category": "generic-restricted",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "nationwide",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "natura",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "navy",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "nba",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "nc",
+    "category": "country-code"
+  },
+  {
+    "tld": "ne",
+    "category": "country-code"
+  },
+  {
+    "tld": "nec",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "net",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "netbank",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "netflix",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "network",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "neustar",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "new",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "newholland",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "news",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "next",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "nextdirect",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "nexus",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "nf",
+    "category": "country-code"
+  },
+  {
+    "tld": "nfl",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ng",
+    "category": "country-code"
+  },
+  {
+    "tld": "ngo",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "nhk",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ni",
+    "category": "country-code"
+  },
+  {
+    "tld": "nico",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "nike",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "nikon",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ninja",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "nissan",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "nissay",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "nl",
+    "category": "country-code"
+  },
+  {
+    "tld": "no",
+    "category": "country-code"
+  },
+  {
+    "tld": "nokia",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "northwesternmutual",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "norton",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "now",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "nowruz",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "nowtv",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "np",
+    "category": "country-code"
+  },
+  {
+    "tld": "nr",
+    "category": "country-code"
+  },
+  {
+    "tld": "nra",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "nrw",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ntt",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "nu",
+    "category": "country-code"
+  },
+  {
+    "tld": "nyc",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "nz",
+    "category": "country-code"
+  },
+  {
+    "tld": "obi",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "observer",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "off",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "office",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "okinawa",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "olayan",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "olayangroup",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "oldnavy",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ollo",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "om",
+    "category": "country-code"
+  },
+  {
+    "tld": "omega",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "one",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ong",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "onl",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "online",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "onyourside",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ooo",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "open",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "oracle",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "orange",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "org",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "organic",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "origins",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "osaka",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "otsuka",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ott",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ovh",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "pa",
+    "category": "country-code"
+  },
+  {
+    "tld": "page",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "panasonic",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "paris",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "pars",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "partners",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "parts",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "party",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "passagens",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "pay",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "pccw",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "pe",
+    "category": "country-code"
+  },
+  {
+    "tld": "pet",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "pf",
+    "category": "country-code"
+  },
+  {
+    "tld": "pfizer",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "pg",
+    "category": "country-code"
+  },
+  {
+    "tld": "ph",
+    "category": "country-code"
+  },
+  {
+    "tld": "pharmacy",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "phd",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "philips",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "phone",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "photo",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "photography",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "photos",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "physio",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "pics",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "pictet",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "pictures",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "pid",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "pin",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ping",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "pink",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "pioneer",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "pizza",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "pk",
+    "category": "country-code"
+  },
+  {
+    "tld": "pl",
+    "category": "country-code"
+  },
+  {
+    "tld": "place",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "play",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "playstation",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "plumbing",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "plus",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "pm",
+    "category": "country-code"
+  },
+  {
+    "tld": "pn",
+    "category": "country-code"
+  },
+  {
+    "tld": "pnc",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "pohl",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "poker",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "politie",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "porn",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "post",
+    "category": "sponsored"
+  },
+  {
+    "tld": "pr",
+    "category": "country-code"
+  },
+  {
+    "tld": "pramerica",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "praxi",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "press",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "prime",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "pro",
+    "category": "generic-restricted",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "prod",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "productions",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "prof",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "progressive",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "promo",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "properties",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "property",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "protection",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "pru",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "prudential",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ps",
+    "category": "country-code"
+  },
+  {
+    "tld": "pt",
+    "category": "country-code"
+  },
+  {
+    "tld": "pub",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "pw",
+    "category": "country-code"
+  },
+  {
+    "tld": "pwc",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "py",
+    "category": "country-code"
+  },
+  {
+    "tld": "qa",
+    "category": "country-code"
+  },
+  {
+    "tld": "qpon",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "quebec",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "quest",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "qvc",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "racing",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "radio",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "raid",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "re",
+    "category": "country-code"
+  },
+  {
+    "tld": "read",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "realestate",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "realtor",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "realty",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "recipes",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "red",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "redstone",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "redumbrella",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "rehab",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "reise",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "reisen",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "reit",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "reliance",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ren",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "rent",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "rentals",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "repair",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "report",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "republican",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "rest",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "restaurant",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "review",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "reviews",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "rexroth",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "rich",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "richardli",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ricoh",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ril",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "rio",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "rip",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "rmit",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ro",
+    "category": "country-code"
+  },
+  {
+    "tld": "rocher",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "rocks",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "rodeo",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "rogers",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "room",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "rs",
+    "category": "country-code"
+  },
+  {
+    "tld": "rsvp",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ru",
+    "category": "country-code"
+  },
+  {
+    "tld": "rugby",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ruhr",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "run",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "rw",
+    "category": "country-code"
+  },
+  {
+    "tld": "rwe",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ryukyu",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sa",
+    "category": "country-code"
+  },
+  {
+    "tld": "saarland",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "safe",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "safety",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sakura",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sale",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "salon",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "samsclub",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "samsung",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sandvik",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sandvikcoromant",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sanofi",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sap",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sarl",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sas",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "save",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "saxo",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sb",
+    "category": "country-code"
+  },
+  {
+    "tld": "sbi",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sbs",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sc",
+    "category": "country-code"
+  },
+  {
+    "tld": "sca",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "scb",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "schaeffler",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "schmidt",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "scholarships",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "school",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "schule",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "schwarz",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "science",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "scjohnson",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "scot",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "sd",
+    "category": "country-code"
+  },
+  {
+    "tld": "se",
+    "category": "country-code"
+  },
+  {
+    "tld": "search",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "seat",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "secure",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "security",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "seek",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "select",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sener",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "services",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ses",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "seven",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sew",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sex",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sexy",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sfr",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sg",
+    "category": "country-code"
+  },
+  {
+    "tld": "sh",
+    "category": "country-code"
+  },
+  {
+    "tld": "shangrila",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sharp",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "shaw",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "shell",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "shia",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "shiksha",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "shoes",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "shop",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "shopping",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "shouji",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "show",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "showtime",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "shriram",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "si",
+    "category": "country-code"
+  },
+  {
+    "tld": "silk",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sina",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "singles",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "site",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sj",
+    "category": "country-code"
+  },
+  {
+    "tld": "sk",
+    "category": "country-code"
+  },
+  {
+    "tld": "ski",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "skin",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sky",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "skype",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sl",
+    "category": "country-code"
+  },
+  {
+    "tld": "sling",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sm",
+    "category": "country-code"
+  },
+  {
+    "tld": "smart",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "smile",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sn",
+    "category": "country-code"
+  },
+  {
+    "tld": "sncf",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "so",
+    "category": "country-code"
+  },
+  {
+    "tld": "soccer",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "social",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "softbank",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "software",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sohu",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "solar",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "solutions",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "song",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sony",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "soy",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "space",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sport",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "spot",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "spreadbetting",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sr",
+    "category": "country-code"
+  },
+  {
+    "tld": "srl",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ss",
+    "category": "country-code"
+  },
+  {
+    "tld": "st",
+    "category": "country-code"
+  },
+  {
+    "tld": "stada",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "staples",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "star",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "statebank",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "statefarm",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "stc",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "stcgroup",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "stockholm",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "storage",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "store",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "stream",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "studio",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "study",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "style",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "su",
+    "category": "country-code"
+  },
+  {
+    "tld": "sucks",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "supplies",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "supply",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "support",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "surf",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "surgery",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "suzuki",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sv",
+    "category": "country-code"
+  },
+  {
+    "tld": "swatch",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "swiftcover",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "swiss",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "sx",
+    "category": "country-code"
+  },
+  {
+    "tld": "sy",
+    "category": "country-code"
+  },
+  {
+    "tld": "sydney",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "systems",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "sz",
+    "category": "country-code"
+  },
+  {
+    "tld": "tab",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "taipei",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "talk",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "taobao",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "target",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tatamotors",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tatar",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "tattoo",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tax",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "taxi",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tc",
+    "category": "country-code"
+  },
+  {
+    "tld": "tci",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "td",
+    "category": "country-code"
+  },
+  {
+    "tld": "tdk",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "team",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tech",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "technology",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tel",
+    "category": "sponsored",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "temasek",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tennis",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "teva",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tf",
+    "category": "country-code"
+  },
+  {
+    "tld": "tg",
+    "category": "country-code"
+  },
+  {
+    "tld": "th",
+    "category": "country-code"
+  },
+  {
+    "tld": "thd",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "theater",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "theatre",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tiaa",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tickets",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tienda",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tiffany",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tips",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tires",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tirol",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "tj",
+    "category": "country-code"
+  },
+  {
+    "tld": "tjmaxx",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tjx",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tk",
+    "category": "country-code"
+  },
+  {
+    "tld": "tkmaxx",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tl",
+    "category": "country-code"
+  },
+  {
+    "tld": "tm",
+    "category": "country-code"
+  },
+  {
+    "tld": "tmall",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tn",
+    "category": "country-code"
+  },
+  {
+    "tld": "to",
+    "category": "country-code"
+  },
+  {
+    "tld": "today",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tokyo",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tools",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "top",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "toray",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "toshiba",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "total",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tours",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "town",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "toyota",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "toys",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tr",
+    "category": "country-code"
+  },
+  {
+    "tld": "trade",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "trading",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "training",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "travel",
+    "category": "sponsored",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "travelchannel",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "travelers",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "travelersinsurance",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "trust",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "trv",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tt",
+    "category": "country-code"
+  },
+  {
+    "tld": "tube",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tui",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tunes",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tushu",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tv",
+    "category": "country-code"
+  },
+  {
+    "tld": "tvs",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "tw",
+    "category": "country-code"
+  },
+  {
+    "tld": "tz",
+    "category": "country-code"
+  },
+  {
+    "tld": "ua",
+    "category": "country-code"
+  },
+  {
+    "tld": "ubank",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ubs",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ug",
+    "category": "country-code"
+  },
+  {
+    "tld": "uk",
+    "category": "country-code"
+  },
+  {
+    "tld": "unicom",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "university",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "uno",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "uol",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ups",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "us",
+    "category": "country-code"
+  },
+  {
+    "tld": "uy",
+    "category": "country-code"
+  },
+  {
+    "tld": "uz",
+    "category": "country-code"
+  },
+  {
+    "tld": "va",
+    "category": "country-code"
+  },
+  {
+    "tld": "vacations",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "vana",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "vanguard",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "vc",
+    "category": "country-code"
+  },
+  {
+    "tld": "ve",
+    "category": "country-code"
+  },
+  {
+    "tld": "vegas",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ventures",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "verisign",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "versicherung",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "vet",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "vg",
+    "category": "country-code"
+  },
+  {
+    "tld": "vi",
+    "category": "country-code"
+  },
+  {
+    "tld": "viajes",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "video",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "vig",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "viking",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "villas",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "vin",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "vip",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "virgin",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "visa",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "vision",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "viva",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "vivo",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "vlaanderen",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "vn",
+    "category": "country-code"
+  },
+  {
+    "tld": "vodka",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "volkswagen",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "volvo",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "vote",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "voting",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "voto",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "voyage",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "vu",
+    "category": "country-code"
+  },
+  {
+    "tld": "vuelos",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "wales",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "walmart",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "walter",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "wang",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "wanggou",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "watch",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "watches",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "weather",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "weatherchannel",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "webcam",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "weber",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "website",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "wed",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "wedding",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "weibo",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "weir",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "wf",
+    "category": "country-code"
+  },
+  {
+    "tld": "whoswho",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "wien",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "wiki",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "williamhill",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "win",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "windows",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "wine",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "winners",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "wme",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "wolterskluwer",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "woodside",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "work",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "works",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "world",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "wow",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ws",
+    "category": "country-code"
+  },
+  {
+    "tld": "wtc",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "wtf",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "xbox",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "xerox",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "xfinity",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "xihuan",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "xin",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "कॉम",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "セール",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "佛山",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ಭಾರತ",
+    "category": "country-code"
+  },
+  {
+    "tld": "慈善",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "集团",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "在线",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "한국",
+    "category": "country-code"
+  },
+  {
+    "tld": "ଭାରତ",
+    "category": "country-code"
+  },
+  {
+    "tld": "大众汽车",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "点看",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "คอม",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ভাৰত",
+    "category": "country-code"
+  },
+  {
+    "tld": "ভারত",
+    "category": "country-code"
+  },
+  {
+    "tld": "八卦",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "موقع",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "বাংলা",
+    "category": "country-code"
+  },
+  {
+    "tld": "公益",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "公司",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "香格里拉",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "网站",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "移动",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "我爱你",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "москва",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "қаз",
+    "category": "country-code"
+  },
+  {
+    "tld": "католик",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "онлайн",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "сайт",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "联通",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "срб",
+    "category": "country-code"
+  },
+  {
+    "tld": "бг",
+    "category": "country-code"
+  },
+  {
+    "tld": "бел",
+    "category": "country-code"
+  },
+  {
+    "tld": "קום",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "时尚",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "微博",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "淡马锡",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ファッション",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "орг",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "नेट",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ストア",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "アマゾン",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "삼성",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "சிங்கப்பூர்",
+    "category": "country-code"
+  },
+  {
+    "tld": "商标",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "商店",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "商城",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "дети",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "мкд",
+    "category": "country-code"
+  },
+  {
+    "tld": "ею",
+    "category": "country-code"
+  },
+  {
+    "tld": "ポイント",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "新闻",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "家電",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "كوم",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "中文网",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "中信",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "中国",
+    "category": "country-code"
+  },
+  {
+    "tld": "中國",
+    "category": "country-code"
+  },
+  {
+    "tld": "娱乐",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "谷歌",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "భారత్",
+    "category": "country-code"
+  },
+  {
+    "tld": "ලංකා",
+    "category": "country-code"
+  },
+  {
+    "tld": "電訊盈科",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "购物",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "クラウド",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ભારત",
+    "category": "country-code"
+  },
+  {
+    "tld": "通販",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "भारतम्",
+    "category": "country-code"
+  },
+  {
+    "tld": "भारत",
+    "category": "country-code"
+  },
+  {
+    "tld": "भारोत",
+    "category": "country-code"
+  },
+  {
+    "tld": "网店",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "संगठन",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "餐厅",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "网络",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ком",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "укр",
+    "category": "country-code"
+  },
+  {
+    "tld": "香港",
+    "category": "country-code"
+  },
+  {
+    "tld": "亚马逊",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "诺基亚",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "食品",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "飞利浦",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "台湾",
+    "category": "country-code"
+  },
+  {
+    "tld": "台灣",
+    "category": "country-code"
+  },
+  {
+    "tld": "手机",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "мон",
+    "category": "country-code"
+  },
+  {
+    "tld": "الجزائر",
+    "category": "country-code"
+  },
+  {
+    "tld": "عمان",
+    "category": "country-code"
+  },
+  {
+    "tld": "ارامكو",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ایران",
+    "category": "country-code"
+  },
+  {
+    "tld": "العليان",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "اتصالات",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "امارات",
+    "category": "country-code"
+  },
+  {
+    "tld": "بازار",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "موريتانيا",
+    "category": "country-code"
+  },
+  {
+    "tld": "پاکستان",
+    "category": "country-code"
+  },
+  {
+    "tld": "الاردن",
+    "category": "country-code"
+  },
+  {
+    "tld": "بارت",
+    "category": "country-code"
+  },
+  {
+    "tld": "بھارت",
+    "category": "country-code"
+  },
+  {
+    "tld": "المغرب",
+    "category": "country-code"
+  },
+  {
+    "tld": "ابوظبي",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "البحرين",
+    "category": "country-code"
+  },
+  {
+    "tld": "السعودية",
+    "category": "country-code"
+  },
+  {
+    "tld": "ڀارت",
+    "category": "country-code"
+  },
+  {
+    "tld": "كاثوليك",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "سودان",
+    "category": "country-code"
+  },
+  {
+    "tld": "همراه",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "عراق",
+    "category": "country-code"
+  },
+  {
+    "tld": "مليسيا",
+    "category": "country-code"
+  },
+  {
+    "tld": "澳門",
+    "category": "country-code"
+  },
+  {
+    "tld": "닷컴",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "政府",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "شبكة",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "بيتك",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "عرب",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "გე",
+    "category": "country-code"
+  },
+  {
+    "tld": "机构",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "组织机构",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "健康",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ไทย",
+    "category": "country-code"
+  },
+  {
+    "tld": "سورية",
+    "category": "country-code"
+  },
+  {
+    "tld": "招聘",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "рус",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "рф",
+    "category": "country-code"
+  },
+  {
+    "tld": "تونس",
+    "category": "country-code"
+  },
+  {
+    "tld": "大拿",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ລາວ",
+    "category": "country-code"
+  },
+  {
+    "tld": "みんな",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "グーグル",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ευ",
+    "category": "country-code"
+  },
+  {
+    "tld": "ελ",
+    "category": "country-code"
+  },
+  {
+    "tld": "世界",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "書籍",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ഭാരതം",
+    "category": "country-code"
+  },
+  {
+    "tld": "ਭਾਰਤ",
+    "category": "country-code"
+  },
+  {
+    "tld": "网址",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "닷넷",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "コム",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "天主教",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "游戏",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "vermögensberater",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "vermögensberatung",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "企业",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "信息",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "嘉里大酒店",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "嘉里",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "مصر",
+    "category": "country-code"
+  },
+  {
+    "tld": "قطر",
+    "category": "country-code"
+  },
+  {
+    "tld": "广东",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "இலங்கை",
+    "category": "country-code"
+  },
+  {
+    "tld": "இந்தியா",
+    "category": "country-code"
+  },
+  {
+    "tld": "հայ",
+    "category": "country-code"
+  },
+  {
+    "tld": "新加坡",
+    "category": "country-code"
+  },
+  {
+    "tld": "فلسطين",
+    "category": "country-code"
+  },
+  {
+    "tld": "政务",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "xxx",
+    "category": "sponsored",
+    "isBrand": false,
+    "hasRestrictions": true
+  },
+  {
+    "tld": "xyz",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "yachts",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "yahoo",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "yamaxun",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "yandex",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "ye",
+    "category": "country-code"
+  },
+  {
+    "tld": "yodobashi",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "yoga",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "yokohama",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "you",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "youtube",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "yt",
+    "category": "country-code"
+  },
+  {
+    "tld": "yun",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "za",
+    "category": "country-code"
+  },
+  {
+    "tld": "zappos",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "zara",
+    "category": "generic",
+    "isBrand": true,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "zero",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "zip",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "zm",
+    "category": "country-code"
+  },
+  {
+    "tld": "zone",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "zuerich",
+    "category": "generic",
+    "isBrand": false,
+    "hasRestrictions": false
+  },
+  {
+    "tld": "zw",
+    "category": "country-code"
+  }
+]
