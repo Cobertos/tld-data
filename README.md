@@ -17,22 +17,17 @@ Data on TLDs, specifically for figuring out which ones can be registered by the 
   // TLD, no leading '.', unicode (not punycode)
   "tld": "accenture",
 
-  // category of the TLD from IANA database
+  // type of the TLD from IANA database
   // ['generic', 'country-code', 'sponsored', 'infrastructure', 'generic-restricted', 'test']
   // An explanation of each can be found: https://icannwiki.org/Generic_top-level_domain
-  "category": "generic",
+  "type": "generic",
 
-  // Is the generic TLD a brand TLD?
-  // More specifically, does the registry agreement for this TLD specify
-  // "Specification 13"
-  // Not included for all TLDs!
+  // If present, is the generic TLD a brand TLD?
+  // More specifically, does the registry agreement for this TLD specify "Specification 13"
   "isBrand": true,
 
-  // Are there any restrictions for registering the TLD?
-  // Not completely accurate, but checks if the registry agreement for this TLD
-  // specifies "Specification 12". See the code for notes on how this can be
-  // improved.
-  // Not included for all TLDs! (specifically ccTLDs!)
+  // If present, are there any restrictions for registering the TLD?
+  // Not super accurate yet, and not currently implemented for ccTLDs!
   "hasRestrictions": false
 },
 ```

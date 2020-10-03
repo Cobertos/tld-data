@@ -7,7 +7,22 @@ import punycode from 'punycode';
 import mapLimit from 'async/mapLimit.js';
 const { JSDOM } = jsdom;
 const readFileAsync = promisify(readFile);
-const writeFileAsync = promisify(writeFile);
+
+// For future reference, here are some sources of information we passed over
+//
+// CSV export from https://newgtlds.icann.org/en/program-status/sunrise-claims-periods
+// It's kept up to date and has some useful info, but it looks like the registry agreemenets are better
+// for determining the information in here wrt restrictions
+//
+// https://data.iana.org/TLD/tlds-alpha-by-domain.txt
+// Root zone directly seemed to be a more accurate place to grab
+//
+// https://newgtlds.icann.org/en/program-status/delegated-strings
+// We are not interested in things that haven't hit the zonefiles yet because
+// we're concerned with registerability
+//
+// https://www.icann.org/resources/registries/gtlds/v2/gtlds.json
+// Not much extra info here, even though it's nicely formatter...
 
 function diffArrayUnordered(actual, expected) {
   // In actual but not expected
@@ -22,39 +37,30 @@ function diffArrayUnordered(actual, expected) {
     .join(', ');
 }
 
+function mapReduceToObj(arr, obj) {
+  return arr
+    .map(_ => ({ [_]: obj }))
+    .reduce(Object.assign, {});
+}
+
 Array.prototype.unique = function() {
   return Array.from(new Set(this));
 };
 
-const heading = chalk.bgWhite.black;
-
-async function getTLDData() {
-  // For future reference, here are some sources of information we passed over
-  //
-  // CSV export from https://newgtlds.icann.org/en/program-status/sunrise-claims-periods
-  // It's kept up to date and has some useful info, but it looks like the registry agreemenets are better
-  // for determining the information in here wrt restrictions
-  //
-  // https://data.iana.org/TLD/tlds-alpha-by-domain.txt
-  // Root zone directly seemed to be a more accurate place to grab
-  //
-  // https://newgtlds.icann.org/en/program-status/delegated-strings
-  // We are not interested in things that haven't hit the zonefiles yet because
-  // we're concerned with registerability
-  //
-  // https://www.icann.org/resources/registries/gtlds/v2/gtlds.json
-  // Not much extra info here, even though it's nicely formatter...
-
-
-  // == 1. Download the root zone and get all TLDs ==
-  // http://www.internic.net/domain/root.zone (most accurate, but no categorical info)
-  console.log(heading('== TLDs from root zone =='));
-  console.log('Fetching...');
+/**
+ * Queries DNS root zone for all TLD strings from
+ * http://www.internic.net/domain/root.zone
+ * (most accurate on what's currently active but no categorical info or anything)
+ * @returns {String[]} Array of all strings from the root zone. Punycode domains
+ * (xn--) are decoded to unicode
+ */
+async function getTLDsFromRootZone() {
+  process.stderr.write('Fetching...\n');
   const resp = await fetch('http://www.internic.net/domain/root.zone');
   const text = await resp.text();
 
-  console.log('Parsing...');
-  const rootZoneTLDStrs = text.split('\n')
+  process.stderr.write('\rParsing...\n');
+  return text.split('\n')
     // Get up to first whitespace (the xxx.yyy.zzz. portion)
     .map(s => s.slice(0, s.search(/\s/)))
     // The only '.' for TLDs will be at the end, filter out rest
@@ -63,144 +69,154 @@ async function getTLDData() {
     .filter(s => !!s)
     .map(s => s.startsWith('xn--') ? punycode.decode(s.slice(4)) : s)
     .unique();
+}
+
+/**
+ * Scrape the data off of IANAs DB
+ * It should be relatively stable as multiple projects refer to it as a source
+ * and scrape t that I've seen
+ * https://www.iana.org/domains/root/db
+ *
+ * TLDs on here might not be in the root DNS yet or might have been terminated.
+ * Keep that in mind when using this dataset...
+ * More info on termination:
+ * https://www.icann.org/resources/pages/gtld-registry-agreement-termination-2015-10-09-en
+ *
+ * @returns {Object[]} Array with all found tlds. Contains:
+ * * `.tld` - TLD string, already decoded from punycode
+ * * `.type` - The ICANN type (see https://icannwiki.org/Generic_top-level_domain).
+ *     ['generic', 'country-code', 'sponsored', 'infrastructure', etc...]
+ * * `.sponsor` - The sponsoring organization
+ */
+async function getTLDInfoFromIANADB() {
+  // == 2. Load in categorical info ==
+  process.stderr.write(chalk.bgWhite.black('== TLDs and categories from IANA Root DB ==\n'));
+  process.stderr.write('Fetching...\n');
+  const resp2 = await fetch('https://www.iana.org/domains/root/db');
+  const text2 = await resp2.text();
+
+  process.stderr.write('Parsing...\n');
+  const dom = new JSDOM(text2);
+  return Array.from(dom.window.document.querySelectorAll('#tld-table tbody tr'))
+    .map(tr => Array.from(tr.children).map(td => td.textContent.trim()))
+    .map(([tld, type, sponsor]) => {
+      return {
+        // Remove leading '.' and any Unicode LTR/RTL marks
+        tld: tld.trim().replace(/[.\u200F\u200E]/g, ''),
+        // Info on types: https://icannwiki.org/Generic_top-level_domain
+        type: type.trim(), //'generic', 'country-code', 'sponsored', 'infrastructure', etc...
+        sponsor: sponsor.trim()
+      };
+    });
+}
+
+/**
+ * Scrapes the given ICANN registry agreement for a _gTLD_. This contains the
+ * best public source of truth for how a certain TLD/registry will handle it's
+ * data.
+ * All agreements can be found:
+ * https://www.icann.org/resources/pages/registries/registries-agreements-en
+ * and the tabs at the top (terminated and archived) even have other types of TLDs
+ *
+ * Note: This Can't handle original TLDs, ccTLD, sTLDs, as they don't have enough
+ * similarity in their registry agreement/page structure to make an auto search
+ * like this useful
+ * Note: Specification 12 and 13 are not _always_ the places checked for below.
+ * Specification 13 is _normally_ found on the registry agreement page as a separate
+ * document. Specification 12 _normally_ is added for registration restrictions.
+ * But there are outliers. For example, `.law` adds its registration restrictions
+ * in a separate ammendment to it's agreement in a separate PDF document, and even
+ * then it's added to the end of Exhibit A instead of Specification 12. Also, sometimes
+ * it seems like registries might only put this information in terms of use/
+ * acceptable use policy (wikipedia quotes this for restrictions on .lgbt).
+ * This is just a real quick check most gTLDs follow. It can be made better.
+ * @returns {object}
+ * * `.hasSpec13` - Does the registry agreement include Specification 13. This means
+ *     the TLD is a generic brand TLD and is meant exclusively for the company that's
+ *     registering. Brand TLDs will not always include this! because ICANN :shrug:?
+ * * `.hasSpec12` - The Specification that's commonly added to the registry agreement
+ *     to specify registration restrictions.
+ */
+async function gTLDInfoFromRegistryAgreement(gTLD) {
+  process.stderr.write(`Fetching gTLD registry agreement page for ${gTLD}\n`);
+  const resp = await fetch(`https://www.icann.org/en/about/agreements/registries/${gTLD}`);
+  const text = await resp.text();
+
+  process.stderr.write(`Parsing gTLD registry agreement page for ${gTLD}\n`);
+  const dom = new JSDOM(text);
+  const hasSpec13 = !!dom.window.document.querySelector('#spec13');
+
+  // It's a relative href to site root
+  const baseRegistryAgreementHTMLHref = dom.window.document.querySelector('#agmthtml a')
+    .getAttribute('href');
+
+  process.stderr.write(`Fetching gTLD registry agreement HTML for ${gTLD}\n`);
+  const resp2 = await fetch(`https://www.icann.org${baseRegistryAgreementHTMLHref}`);
+  const text2 = await resp2.text();
+
+  const hasSpec12 = text2.includes("SPECIFICATION 12");
+
+  return { hasSpec13, hasSpec12 };
+}
+
+/**
+ * Retrieve all the TLD data
+ * @returns {object[]}
+ * * `.tld` - TLD string
+ * * `.type` - The type of TLD (see `getTLDInfoFromIANADB()`)
+ * * `.isBrand` - If present, is a brand TLD (only .type generic will have)
+ * * `.hasRestrictions` - If present, the TLD has restrictions for registering
+ */
+async function getTLDData() {
+  // == 1. Download the root zone and get all TLDs ==
+  process.stderr.write(chalk.bgWhite.black('== TLDs from root zone ==\n'));
+  const rootZoneTLDStrs = await getTLDsFromRootZone();
   let tlds = rootZoneTLDStrs
     .map(s => ({
       tld: s
     }));
-  console.log(`Found TLDs: ${chalk.yellow(tlds.length)}`);
+  process.stderr.write(`Found TLDs: ${chalk.yellow(tlds.length)}\n`);
 
-  // == 2. Load in categorical info ==
-  // Everyone scrapes this (multiple project refer to it) so it should be stable
-  // https://www.iana.org/domains/root/db
-  console.log(heading('== TLDs and categories from IANA Root DB =='));
-  console.log('Fetching...');
-  const resp2 = await fetch('https://www.iana.org/domains/root/db');
-  const text2 = await resp2.text();
-
-  console.log('Parsing...');
-  const dom = new JSDOM(text2);
-  const ianaDBTLDs = Array.from(dom.window.document.querySelectorAll('#tld-table tbody tr'))
-    .map(tr => Array.from(tr.children).map(td => td.textContent.trim()))
-    .map(trArray => {
-      return {
-        // Remove leading '.' and any Unicode LTR/RTL marks
-        tld: trArray[0].trim().replace(/[.\u200F\u200E]/g, ''),
-        category: trArray[1].trim(), //'generic', 'country-code', 'sponsored', 'infrastructure', etc...
-      };
-    });
-  console.log(`* Found TLDs: ${chalk.yellow(ianaDBTLDs.length)}`);
-  //Info on categories: https://icannwiki.org/Generic_top-level_domain
-  const categories = ianaDBTLDs
-    .map(o => o.category)
-    .unique();
-  const prettyCategories = categories.map(c => chalk.yellow(c)).join(', ');
-  console.log(`* Found categories: ${prettyCategories}`);
-
-  // Domains on this site might not be in DNS yet, or might have been terminated
-  // through various means (Registry initiated/ICANN initiated)
-  // More details on terminations can be found 
-  // https://www.icann.org/resources/pages/gtld-registry-agreement-termination-2015-10-09-en
-  console.log(`* Diff with root zone: ${diffArrayUnordered(ianaDBTLDs.map(o => o.tld), rootZoneTLDStrs)}`);
-  console.log('(note): TLDs might be in this source but not in the root zone if the TLD is delegated but not in DNS or if the registry service has been terminated');
+  // == 2. Load in categorical info from IANA DB ==
+  const ianaDBTLDs = await getTLDInfoFromIANADB();
+  process.stderr.write(`* Found TLDs: ${chalk.yellow(ianaDBTLDs.length)}\n`);
+  const prettyTypes = ianaDBTLDs
+    .map(o => o.type)
+    .unique()
+    .map(c => chalk.yellow(c))
+    .join(', ');
+  process.stderr.write(`* Found types: ${prettyTypes}\n`);
+  const diffWithRootZone = diffArrayUnordered(ianaDBTLDs.map(o => o.tld), rootZoneTLDStrs);
+  process.stderr.write(`* Diff with root zone: ${diffWithRootZone}\n`);
+  process.stderr.write('(note): TLDs might be in this source but not in the root zone if the TLD is delegated but not in DNS or if the registry service has been terminated\n');
 
   // Combine using previous data, but use root zone as source of truth
-  console.log('Combining with previous data');
+  process.stderr.write('Combining with previous data\n');
   tlds.forEach(o => {
-    // If this fails, the TLD in the root zone had no category information, which
+    // If this fails, the TLD in the root zone had no type information, which
     // shouldn't happen. The list should be exhaustive
-    o.category = ianaDBTLDs.find(o2 => o.tld === o2.tld).category;
+    o.type = ianaDBTLDs.find(o2 => o.tld === o2.tld).type;
   })
-  console.log('Combined');
+  process.stderr.write('Combined\n');
 
-  // == 3. Finding TLD restrictions ==
-  // These aren't even easy to figure out because registries sometimes just let
-  // random shit through, like .cat and nyan.cat. And there's always the possibility
-  // of fulfilling the criteria through the use of someone else registering
-  //
-  // = gTLD restrictions =
-  // This is NOT easy, each gTLD basically can have it's own restrictions negotiated
-  // with ICANN found in the registry agreement. The registry agreement governs a
-  // ton of boilerplate business stuff, like SLA. We are most interested in:
-  // * Specification 12 - This is where Registry level restrictions will usually be
-  // found. Most registry agreements won't have this (the redline document shows it
-  // deleted).
-  // * Specification 13 - Designates the TLD as a brand TLD, which... idk what this
-  // means but is used for specific companies. A separate document from the original
-  // registry agreement
-  // * Exhibit A - Lists services that the Registry will provide. .law adds it's
-  // restriction clause to Exhibit A with pretty vague language. This is not
-  // in the initial registry agreement, but in a later amendment.
-  //
-  // It seems like these restrictions can sometimes also be in the registries
-  // terms of service and/or acceptable use policy. At that point... There's not
-  // much we can do but manual human data manipulation, and I don't know how
-  // legally binding that is anyway.
-  //
-  // All documents related to registry agreements are found here:
-  // https://www.icann.org/resources/pages/registries/registries-agreements-en
-  // and the "Terminated" and "Archived" tabs also provide other TLDs that
-  // are not gTLDs
-  //
-  // = ccTLD restrictions =
-  // TODO
-  //
-  // = Other resitrctions =
-  // 
-  // ===
-  async function gTLDInfoFromRegistryAgreement(gTLD) {
-    console.log(`Fetching gTLD registry agreement page for ${gTLD}`);
-    const resp = await fetch(`https://www.icann.org/en/about/agreements/registries/${gTLD}`);
-    const text = await resp.text();
-
-    console.log(`Parsing gTLD registry agreement page for ${gTLD}`);
-    const dom = new JSDOM(text);
-    const hasSpec13 = !!dom.window.document.querySelector('#spec13');
-
-    // It's a relative href to site root
-    const baseRegistryAgreementHTMLHref = dom.window.document.querySelector('#agmthtml a')
-      .getAttribute('href');
-
-    console.log(`Fetching gTLD registry agreement HTML for ${gTLD}`);
-    const resp2 = await fetch(`https://www.icann.org${baseRegistryAgreementHTMLHref}`);
-    const text2 = await resp2.text();
-
-    const hasSpec12 = text2.includes("SPECIFICATION 12");
-
-    const ret = {
-      isBrand: hasSpec13,
-      hasRestrictions: hasSpec12
-    };
-    console.log(`Got data for ${gTLD}`, ret);
-    return ret;
-  }
-
-  console.log(heading('== TLD information from registry agreements =='));
+  // == 3. Brand TLD & TLD restrictions ==
+  process.stderr.write(chalk.bgWhite.black('== TLD information from registry agreements ==\n'));
+  // This is data for which we don't have automation
   const manualData = {
     // generic
-    com: { isBrand: false, hasRestrictions: false },
-    info: { isBrand: false, hasRestrictions: false },
-    net: { isBrand: false, hasRestrictions: false },
-    org: { isBrand: false, hasRestrictions: false },
+    ...mapReduceToObj(
+      ['com', 'info', 'net', 'org'],
+      {}),
 
-    // sponsored (sTLD)
-    aero: { isBrand: false, hasRestrictions: true },
-    asia: { isBrand: false, hasRestrictions: true },
-    cat: { isBrand: false, hasRestrictions: true },
-    coop: { isBrand: false, hasRestrictions: true },
-    edu: { isBrand: false, hasRestrictions: true },
-    gov: { isBrand: false, hasRestrictions: true },
-    int: { isBrand: false, hasRestrictions: true },
-    jobs: { isBrand: false, hasRestrictions: true },
-    mil: { isBrand: false, hasRestrictions: true },
-    mobi: { isBrand: false, hasRestrictions: true },
-    tel: { isBrand: false, hasRestrictions: true },
-    travel: { isBrand: false, hasRestrictions: true },
-    xxx: { isBrand: false, hasRestrictions: true },
+    // sponsorted (sTLD)
+    ...mapReduceToObj(
+      ['aero', 'asia', 'cat', 'coop', 'edu', 'gov', 'int', 'jobs', 'mil', 'mobi', 'tel', 'travel', 'xxx'],
+      { isBrand: false, hasRestrictions: true }),
 
-    // generic-restricted
-    biz: { isBrand: false, hasRestrictions: true },
-    name: { isBrand: false, hasRestrictions: true },
-    pro: { isBrand: false, hasRestrictions: true },
+    // generic
+    ...mapReduceToObj(
+      ['biz', 'name', 'pro'],
+      { isBrand: false, hasRestrictions: true }),
 
     // infrastructure
     arpa: { isBrand: false, hasRestrictions: true }
@@ -212,12 +228,16 @@ async function getTLDData() {
       return;
     }
     // All gTLDs are marked 'generic', but also includes some that aren't new gTLDs
-    // like .com and .net
-    else if(o.category === 'generic') {
+    // like .com and .net, which the if clause above should solve
+    else if(o.type === 'generic') {
       await new Promise((resolve) => resolve());
       const asciiTLD = punycode.toASCII(o.tld);
       const info = await gTLDInfoFromRegistryAgreement(asciiTLD);
-      Object.assign(o, info);
+      process.stderr.write(`Got data for ${asciiTLD}, ${JSON.stringify(info)}\n`);
+      Object.assign(o, {
+        isBrand: info.hasSpec13,
+        hasRestrictions: info.hasSpec12
+      });
       return;
     }
   });
@@ -226,12 +246,7 @@ async function getTLDData() {
 }
 
 async function main() {
-  if (!process.argv[2]) {
-    throw new Error('No file in process.argv[2]');
-  }
-  const tlds = await getTLDData();
-  const tldsStr = JSON.stringify(tlds, null, 2);
-  console.log(`Writing data to ${process.argv[2]}`);
-  await writeFileAsync(process.argv[2], tldsStr);
+  const tldObjs = await getTLDData();
+  process.stdout.write(JSON.stringify(tldObjs, null, 2));
 }
 main();
