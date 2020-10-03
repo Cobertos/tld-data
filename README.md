@@ -6,15 +6,13 @@
 
 # tld-data
 
-Accurate data on TLDs with a focus on registration restrictions.
+Accurate data on TLDs with a focus on registration restrictions. Data pulled weekly
 
 Methodology:
 
 * Pull all TLDs from [DNS root zone](http://www.internic.net/domain/root.zone) for accuracy (disregards upcoming and terminated TLDs)
 * Combines with type information from [IANA root zone database](https://www.iana.org/domains/root/db)
 * Scrapes ICANN registry agreements for other information to get as close to the source as possible
-
-Automatically updates weekly with Github Actions
 
 ## Data
 
