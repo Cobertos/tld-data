@@ -28,9 +28,10 @@ Methodology:
   // An explanation of each can be found: https://icannwiki.org/Generic_top-level_domain
   "type": "generic",
 
-  // If present, is the generic TLD a brand TLD?
+  // If present, is the generic TLD a generic brand TLD?
   // More specifically, does the registry agreement for this TLD specify "Specification 13"
-  // or have an exemption to "Specification 9"
+  // or have an exemption to "Specification 9". Both of these prohibit the registry
+  // from giving domains to anyone but the registry and affiliates (no third parties).
   "isBrand": true,
 
   // If present, are there any restrictions for registering the TLD?
