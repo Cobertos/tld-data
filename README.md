@@ -14,6 +14,8 @@ Methodology:
 * Combines with type information from [IANA root zone database](https://www.iana.org/domains/root/db)
 * Scrapes ICANN registry agreements for other information to get as close to the source as possible
 
+Automatically updates weekly with Github Actions
+
 ## Data
 
 [`tldData.json`](tldData.json) contains an array with an object for every TLD in the [root zone](http://www.internic.net/domain/root.zone). Each object has other properties shown in the below snippet assembled from multiple sources.
