@@ -1,12 +1,10 @@
 import { promisify } from 'util';
-import { readFile, writeFile } from 'fs';
 import fetch from 'node-fetch';
 import chalk from 'chalk';
 import jsdom from 'jsdom';
 import punycode from 'punycode';
 import mapLimit from 'async/mapLimit.js';
 const { JSDOM } = jsdom;
-const readFileAsync = promisify(readFile);
 
 // For future reference, here are some sources of information we passed over
 //
@@ -161,13 +159,15 @@ async function gTLDInfoFromRegistryAgreement(gTLD) {
 
 /**
  * Retrieve all the TLD data
+ * @param {Object} Object of tlds mapped to objects to use for the manual data
+ * step
  * @returns {object[]}
  * * `.tld` - TLD string
  * * `.type` - The type of TLD (see `getTLDInfoFromIANADB()`)
  * * `.isBrand` - If present, is a brand TLD (only .type generic will have)
  * * `.hasRestrictions` - If present, the TLD has restrictions for registering
  */
-async function getTLDData() {
+async function getTLDData(prevData) {
   // == 1. Download the root zone and get all TLDs ==
   process.stderr.write(chalk.bgWhite.black('== TLDs from root zone ==\n'));
   const rootZoneTLDStrs = await getTLDsFromRootZone();
@@ -219,7 +219,10 @@ async function getTLDData() {
       { isBrand: false, hasRestrictions: true }),
 
     // infrastructure
-    arpa: { isBrand: false, hasRestrictions: true }
+    arpa: { isBrand: false, hasRestrictions: true },
+
+    // Anything from the outside
+    ...prevData
   };
 
   await mapLimit(tlds, 5, async o => {
@@ -245,8 +248,29 @@ async function getTLDData() {
   return tlds;
 }
 
+// Reads full buffer out of stream
+async function read(stream) {
+  const chunks = [];
+  for await (const chunk of stream) chunks.push(chunk); 
+  return Buffer.concat(chunks).toString('utf8');
+}
+
 async function main() {
-  const tldObjs = await getTLDData();
+  // Check stdin for any previous data
+  const inStr = await read(process.stdin);
+  let prevData;
+  if(inStr) {
+    const inObj = JSON.parse(inStr);
+    prevData = inObj
+      .map(({tld, isBrand, hasRestrictions}) => {
+        return {
+          [tld]: { isBrand, hasRestrictions }
+        };
+      })
+      .reduce(Object.assign, {});
+  }
+  const tldObjs = await getTLDData(prevData);
+  // Output
   process.stdout.write(JSON.stringify(tldObjs, null, 2));
 }
 main();

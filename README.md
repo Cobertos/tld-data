@@ -34,4 +34,15 @@ Data on TLDs, specifically for figuring out which ones can be registered by the 
 
 ## Running
 
-`node --experimental-modules fetchData.js`
+`fetchData.js` prints data to stdout and takes previously found data from stdin (to reuse in certain portions to reduce HTTP requests).
+
+You can run the command to generate all new data:
+
+`node --experimental-modules fetchData.js --color > tldData.json`
+
+Or to reuse the old `isBrand` and `hasRestrictions` keys, you can run:
+
+```
+echo tldData.json | node --experimental-modules fetchData.js --color > tldDataNew.json
+mv -f tldDataNew.json tldData.json
+```
