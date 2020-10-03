@@ -4,7 +4,9 @@ import chalk from 'chalk';
 import jsdom from 'jsdom';
 import punycode from 'punycode';
 import mapLimit from 'async/mapLimit.js';
+import { wikipediaBrandGTLDs } from './brandTLDs.mjs';
 const { JSDOM } = jsdom;
+const wikipediaBrandGTLDsDecoded = wikipediaBrandGTLDs.map(t => punycode.toUnicode(t));
 
 // For future reference, here are some sources of information we passed over
 //
@@ -134,6 +136,10 @@ async function getTLDInfoFromIANADB() {
  *     registering. Brand TLDs will not always include this! because ICANN :shrug:?
  * * `.hasSpec12` - The Specification that's commonly added to the registry agreement
  *     to specify registration restrictions.
+ * * `.hasSpec9Exemption` - Whether the gTLD has an active exemption to specification
+ *     9 and it has not been withdrawal. Specification 9 exemption is very similar
+ *     to a Specification 13 addition. The last bullet at specification 9 basically
+ *     specifies it is a TLD only meant for registry and affiliates.
  */
 async function gTLDInfoFromRegistryAgreement(gTLD) {
   process.stderr.write(`Fetching gTLD registry agreement page for ${gTLD}\n`);
@@ -143,6 +149,8 @@ async function gTLDInfoFromRegistryAgreement(gTLD) {
   process.stderr.write(`Parsing gTLD registry agreement page for ${gTLD}\n`);
   const dom = new JSDOM(text);
   const hasSpec13 = !!dom.window.document.querySelector('#spec13');
+  const hasSpec9Exemption = !!dom.window.document.querySelector('#spec9') &&
+    !dom.window.document.querySelector('#spec9').textContent.match(/withdrawal/i);
 
   // It's a relative href to site root
   const baseRegistryAgreementHTMLHref = dom.window.document.querySelector('#agmthtml a')
@@ -154,7 +162,7 @@ async function gTLDInfoFromRegistryAgreement(gTLD) {
 
   const hasSpec12 = text2.includes("SPECIFICATION 12");
 
-  return { hasSpec13, hasSpec12 };
+  return { hasSpec13, hasSpec12, hasSpec9Exemption };
 }
 
 /**
@@ -238,8 +246,8 @@ async function getTLDData(prevData) {
       const info = await gTLDInfoFromRegistryAgreement(asciiTLD);
       process.stderr.write(`Got data for ${asciiTLD}, ${JSON.stringify(info)}\n`);
       Object.assign(o, {
-        isBrand: info.hasSpec13,
-        hasRestrictions: info.hasSpec12
+        isBrand: info.hasSpec13 || info.hasSpec9Exemption,
+        hasRestrictions: info.hasSpec12,
       });
       return;
     }
