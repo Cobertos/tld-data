@@ -44,7 +44,7 @@
   {
     "tld": "able",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -172,7 +172,7 @@
   {
     "tld": "agakhan",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -212,7 +212,7 @@
   {
     "tld": "akdn",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -240,7 +240,7 @@
   {
     "tld": "allfinanz",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -388,7 +388,7 @@
   {
     "tld": "aramco",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -678,7 +678,7 @@
   {
     "tld": "bcn",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -974,7 +974,7 @@
   {
     "tld": "broadway",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -1086,7 +1086,7 @@
   {
     "tld": "cal",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -1236,7 +1236,7 @@
   {
     "tld": "catholic",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": true
   },
   {
@@ -1428,7 +1428,7 @@
   {
     "tld": "cityeats",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -1708,7 +1708,7 @@
   {
     "tld": "crs",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -1822,7 +1822,7 @@
   {
     "tld": "dclk",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -2028,7 +2028,7 @@
   {
     "tld": "dot",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -2040,7 +2040,7 @@
   {
     "tld": "drive",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -2204,7 +2204,7 @@
   {
     "tld": "erni",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -2436,7 +2436,7 @@
   {
     "tld": "firmdale",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -2518,7 +2518,7 @@
   {
     "tld": "foo",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -2618,7 +2618,7 @@
   {
     "tld": "ftr",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -2728,7 +2728,7 @@
   {
     "tld": "gbiz",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -2834,7 +2834,7 @@
   {
     "tld": "gle",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -2846,7 +2846,7 @@
   {
     "tld": "globo",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -2920,7 +2920,7 @@
   {
     "tld": "goog",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -3028,7 +3028,7 @@
   {
     "tld": "guge",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -3072,7 +3072,7 @@
   {
     "tld": "hangout",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -3120,7 +3120,7 @@
   {
     "tld": "helsinki",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -3388,7 +3388,7 @@
   {
     "tld": "imamat",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -3526,7 +3526,7 @@
   {
     "tld": "ismaili",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -3678,7 +3678,7 @@
   {
     "tld": "jprs",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -3712,25 +3712,25 @@
   {
     "tld": "kerryhotels",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
     "tld": "kerrylogistics",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
     "tld": "kerryproperties",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
     "tld": "kfh",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -3836,13 +3836,13 @@
   {
     "tld": "kred",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
     "tld": "kuokgroup",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -3918,7 +3918,7 @@
   {
     "tld": "lasalle",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -4032,7 +4032,7 @@
   {
     "tld": "lifestyle",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -4098,7 +4098,7 @@
   {
     "tld": "living",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -4304,7 +4304,7 @@
   {
     "tld": "mango",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -4382,7 +4382,7 @@
   {
     "tld": "med",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -4394,7 +4394,7 @@
   {
     "tld": "meet",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -4510,7 +4510,7 @@
   {
     "tld": "mma",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": true
   },
   {
@@ -4984,7 +4984,7 @@
   {
     "tld": "office",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -5014,7 +5014,7 @@
   {
     "tld": "ollo",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -5332,7 +5332,7 @@
   {
     "tld": "play",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -5370,7 +5370,7 @@
   {
     "tld": "pohl",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -5432,7 +5432,7 @@
   {
     "tld": "prod",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -5536,7 +5536,7 @@
   {
     "tld": "quest",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -5582,7 +5582,7 @@
   {
     "tld": "realtor",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -5612,7 +5612,7 @@
   {
     "tld": "redumbrella",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -5720,7 +5720,7 @@
   {
     "tld": "richardli",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -5860,7 +5860,7 @@
   {
     "tld": "sakura",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -6196,7 +6196,7 @@
   {
     "tld": "shriram",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -6434,13 +6434,13 @@
   {
     "tld": "stc",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
     "tld": "stcgroup",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -6714,7 +6714,7 @@
   {
     "tld": "thd",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -6928,7 +6928,7 @@
   {
     "tld": "travelersinsurance",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -6940,7 +6940,7 @@
   {
     "tld": "trv",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -7068,7 +7068,7 @@
   {
     "tld": "vana",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -7186,7 +7186,7 @@
   {
     "tld": "viva",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -7632,7 +7632,7 @@
   {
     "tld": "католик",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": true
   },
   {
@@ -7956,7 +7956,7 @@
   {
     "tld": "ارامكو",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -8030,7 +8030,7 @@
   {
     "tld": "كاثوليك",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": true
   },
   {
@@ -8076,7 +8076,7 @@
   {
     "tld": "بيتك",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -8154,7 +8154,7 @@
   {
     "tld": "グーグル",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -8206,7 +8206,7 @@
   {
     "tld": "天主教",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": true
   },
   {
@@ -8242,7 +8242,7 @@
   {
     "tld": "嘉里大酒店",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -8318,7 +8318,7 @@
   {
     "tld": "yamaxun",
     "type": "generic",
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {

@@ -6,7 +6,13 @@
 
 # tld-data
 
-Data on TLDs, specifically for figuring out which ones can be registered by the general public.
+Accurate data on TLDs with a focus on registration restrictions.
+
+Methodology:
+
+* Pull all TLDs from [DNS root zone](http://www.internic.net/domain/root.zone) for accuracy (disregards upcoming and terminated TLDs)
+* Combines with type information from [IANA root zone database](https://www.iana.org/domains/root/db)
+* Scrapes ICANN registry agreements for other information to get as close to the source as possible
 
 ## Data
 
@@ -24,9 +30,11 @@ Data on TLDs, specifically for figuring out which ones can be registered by the 
 
   // If present, is the generic TLD a brand TLD?
   // More specifically, does the registry agreement for this TLD specify "Specification 13"
+  // or have an exemption to "Specification 9"
   "isBrand": true,
 
   // If present, are there any restrictions for registering the TLD?
+  // Only checks for "Specification 12" currently (see notes in code)
   // Not super accurate yet, and not currently implemented for ccTLDs!
   "hasRestrictions": false
 },
