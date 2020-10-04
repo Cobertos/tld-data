@@ -47,11 +47,11 @@ Methodology:
 
 You can run the command to generate all new data:
 
-`node --experimental-modules fetchData.js --color > tldData.json`
+`node --experimental-modules fetchData.mjs --color > tldData.json`
 
 Or to reuse the old `isBrand` and `hasRestrictions` keys, you can run:
 
 ```
-echo tldData.json | node --experimental-modules fetchData.js --color > tldDataNew.json
+node --experimental-modules fetchData.mjs --stdin --color < tldData.json > tldDataNew.json
 mv -f tldDataNew.json tldData.json
 ```
