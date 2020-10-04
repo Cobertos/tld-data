@@ -1,6 +1,6 @@
 {
   "name": "tld-data-extended",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Data about TLDs, with more _brand_",
   "author": {
     "name": "cobertos",
@@ -15,6 +15,7 @@
     "fetch": "node --experimental-modules fetchData.mjs > tldData.json"
   },
   "dependencies": {
+    "argparse": "^2.0.1",
     "async": "^3.2.0",
     "chalk": "^4.1.0",
     "jsdom": "^16.4.0",
