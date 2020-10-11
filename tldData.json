@@ -3472,12 +3472,6 @@
     "hasRestrictions": true
   },
   {
-    "tld": "intel",
-    "type": "generic",
-    "isBrand": true,
-    "hasRestrictions": false
-  },
-  {
     "tld": "international",
     "type": "generic",
     "isBrand": false,
