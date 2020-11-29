@@ -9,10 +9,6 @@ const { JSDOM } = jsdom;
 
 // For future reference, here are some sources of information we passed over
 //
-// CSV export from https://newgtlds.icann.org/en/program-status/sunrise-claims-periods
-// It's kept up to date and has some useful info, but it looks like the registry agreemenets are better
-// for determining the information in here wrt restrictions
-//
 // https://data.iana.org/TLD/tlds-alpha-by-domain.txt
 // Root zone directly seemed to be a more accurate place to grab
 //
@@ -22,6 +18,12 @@ const { JSDOM } = jsdom;
 //
 // https://www.icann.org/resources/registries/gtlds/v2/gtlds.json
 // Not much extra info here, even though it's nicely formatter...
+//
+// https://www.icann.org/resources/pages/listing-2012-02-25-en
+// Seems to mostly duplicat the IANA database
+//
+// https://www.icann.org/resources/registries/gtlds/v1/newgtlds.csv
+// Has delegation date, application Id, and signing date got gTLD
 
 function diffArrayUnordered(actual, expected) {
   // In actual but not expected
@@ -46,6 +48,27 @@ Array.prototype.unique = function() {
   return Array.from(new Set(this));
 };
 
+async function fetchUntil200(...args) {
+  let retries = 3;
+  let resp = {};
+  while (resp.status !== 200 && retries > 0) {
+    resp = await fetch(...args);
+    retries -= 1;
+  }
+  if (!resp) {
+    throw new Error(`fetch ${args[0]} failed after 3 retries`);
+  }
+  return resp;
+}
+
+/**Assertion helper, custom message and error type
+ */
+export function _assert(condition, message = "Assertion Error", error = Error) {
+  if (!condition) {
+    throw new error(message);
+  }
+}
+
 /**
  * Queries DNS root zone for all TLD strings from
  * http://www.internic.net/domain/root.zone
@@ -55,7 +78,7 @@ Array.prototype.unique = function() {
  */
 async function getTLDsFromRootZone() {
   process.stderr.write('Fetching...\n');
-  const resp = await fetch('http://www.internic.net/domain/root.zone');
+  const resp = await fetchUntil200('http://www.internic.net/domain/root.zone');
   const text = await resp.text();
 
   process.stderr.write('\rParsing...\n');
@@ -88,10 +111,8 @@ async function getTLDsFromRootZone() {
  * * `.sponsor` - The sponsoring organization
  */
 async function getTLDInfoFromIANADB() {
-  // == 2. Load in categorical info ==
-  process.stderr.write(chalk.bgWhite.black('== TLDs and categories from IANA Root DB ==\n'));
   process.stderr.write('Fetching...\n');
-  const resp2 = await fetch('https://www.iana.org/domains/root/db');
+  const resp2 = await fetchUntil200('https://www.iana.org/domains/root/db');
   const text2 = await resp2.text();
 
   process.stderr.write('Parsing...\n');
@@ -142,7 +163,7 @@ async function getTLDInfoFromIANADB() {
  */
 async function gTLDInfoFromRegistryAgreement(gTLD) {
   process.stderr.write(`Fetching gTLD registry agreement page for ${gTLD}\n`);
-  const resp = await fetch(`https://www.icann.org/en/about/agreements/registries/${gTLD}`);
+  const resp = await fetchUntil200(`https://www.icann.org/en/about/agreements/registries/${gTLD}`);
   const text = await resp.text();
 
   process.stderr.write(`Parsing gTLD registry agreement page for ${gTLD}\n`);
@@ -156,12 +177,119 @@ async function gTLDInfoFromRegistryAgreement(gTLD) {
     .getAttribute('href');
 
   process.stderr.write(`Fetching gTLD registry agreement HTML for ${gTLD}\n`);
-  const resp2 = await fetch(`https://www.icann.org${baseRegistryAgreementHTMLHref}`);
+  const resp2 = await fetchUntil200(`https://www.icann.org${baseRegistryAgreementHTMLHref}`);
   const text2 = await resp2.text();
 
   const hasSpec12 = text2.includes("SPECIFICATION 12");
 
   return { hasSpec13, hasSpec12, hasSpec9Exemption };
+}
+
+/**
+ * Retrieves all sunrise/sunset data from the export on
+ * https://newgtlds.icann.org/en/program-status/sunrise-claims-periods
+ * Only available for gTLDs
+ * @returns {Object[]} Array of objects, one per TLD, defining the periods and dates
+ * for the TLD
+ * ```
+ * .tld - The tld, decoded from punycode to Unicode
+ * .spec13 - If it was a spec13 (brand) TLD in this dataset
+ * .periods - Array of period objects. Should have at least 'Sunrise' and 'Trademark Claims'
+ *   .periods.name - Name of the period
+ *   .periods.open - Open date of the period (might be omitted)
+ *   .periods.close - Close date of the period (might be omitted)
+ *   .periods.type - For "other periods", the string in the type field (might be omitted)
+ * .isGenerallyAvailable - Whether or not all it's in General Availability (NOTE: NOT ACCURATE)
+ * ```
+ */
+export async function getTLDsWithStatusPeriods() {
+  process.stderr.write(`Fetching gTLD sunrise, sunset data\n`);
+  const resp = await fetchUntil200('https://newgtlds.icann.org/program-status/sunrise-claims-periods.xls');
+  const text = await resp.text();
+
+  process.stderr.write(`Parsing gTLD sunrise, sunset data\n`);
+  // So ironically... this is not an .xls file (even though the site says so?) but
+  // an HTML table... So that's cool and easier to parse.
+  const dom = new JSDOM(text);
+  dom.window.document.querySelector('tbody');
+  const ret = Array.from(dom.window.document.querySelectorAll('tbody tr'))
+    .map(tr => Array.from(tr.children).map(td => td.textContent.trim()))
+    .map((rows) => {
+      const [tld, type, sunriseOpenDate, sunriseCloseDate, trademarkClaimsOpenDate,
+        trademarkClaimsCloseDate, otherPeriodFrom, otherPeriodName, otherPeriodTo, otherPeriodType,
+        lastUpdated] = rows;
+
+      // Defines the type of sunrise the registry has
+      // https://en.wikipedia.org/wiki/Sunrise_period
+      const types = ['Start Date Sunrise', 'End Date Sunrise', 'Spec 13 - .BRAND TLD']
+      _assert(type === '' || types.includes(type.trim()), `'${tld}' sunrise event type must be in well-known types or blank`);
+
+      // Parse all the period information
+      // Other periods are CSV'd (if there are any)
+      function makePeriod(name, open, close, type) {
+        _assert(name, 'No period name given');
+        if (!open && !close) {
+          return [];
+        }
+
+        return [{
+          name,
+          ...(open ? { open: Date.parse(open) } : {} ),
+          ...(close ? { close: Date.parse(close) } : {} ),
+          ...(type ? { type } : {} ),
+        }];
+      }
+
+      let otherPeriods = [];
+      if (otherPeriodName !== '') {
+        otherPeriods = otherPeriodFrom.split(',')
+          // TODO: If there's ',' in the name field or type field, it doesn't necessarily work
+          // well...
+          .map((from, idx) => makePeriod(otherPeriodName.split(',')[idx].trim(), from.trim(),
+            otherPeriodTo.split(',')[idx].trim(), otherPeriodType.split(',')[idx].trim()))
+          .flat();
+      }
+
+      const periods = [
+        ...makePeriod('Sunrise', sunriseOpenDate, sunriseCloseDate),
+        ...makePeriod('Trademark Claims', trademarkClaimsOpenDate, trademarkClaimsCloseDate),
+        ...otherPeriods
+      ];
+
+      // General Availability...
+      // There's no good way to get this data, I assume you have to be talking
+      // to the registrars to know when the real date is...
+      // Here's some guesses
+      // 1) Use the last date in the periods that isn't "Trademark Claims"
+      // Delegated -> Sunrise -> Landrush -> General Availability
+      // 2) Use 90 days before the end of "Trademark Claims" (ICANN requires 90 days of
+      // trademark claims at least from General Availability launch:
+      // https://www.trademark-clearinghouse.com/help/faq/how-will-trademark-claims-service-function
+      // Neither of these are super accurate from checking. Sometimes #1 can be
+      // off by years (e.g. .homes) and I've seen #2 off by at least 2 months...
+      // So we just choose a safe bet (guess 1) as there's more likely to be at
+      // least 1 close date
+      const generalAvailabilityGuess1 = periods
+        .filter(p => p.name !== 'Trademark Claims')
+        .map(p => p.close)
+        .filter(d => !!d)
+        // Find highest
+        .reduce((acc, itm) => acc > itm ? acc : itm, -1);
+      //const generalAvailabilityGuess2 = Date.parse(trademarkClaimsCloseDate) - (90 * 24 * 60 * 60 * 1000); //NaN if date fails to parse
+      const isGenerallyAvailable = generalAvailabilityGuess1 === -1 ?
+        false : generalAvailabilityGuess1 < Date.now();
+
+      return {
+        tld: punycode.toUnicode(tld),
+        spec13: type.trim() === 'Spec 13 - .BRAND TLD',
+        periods,
+        isGenerallyAvailable
+      };
+    })
+    .filter(o => !!o);
+
+  _assert(ret.length === ret.unique().length, 'All TLDs should appear once in sunrise/sunset data')
+  return ret;
 }
 
 /**
@@ -185,6 +313,7 @@ async function getTLDData(prevData) {
   process.stderr.write(`Found TLDs: ${chalk.yellow(tlds.length)}\n`);
 
   // == 2. Load in categorical info from IANA DB ==
+  process.stderr.write(chalk.bgWhite.black('== TLDs and categories from IANA Root DB ==\n'));
   const ianaDBTLDs = await getTLDInfoFromIANADB();
   process.stderr.write(`* Found TLDs: ${chalk.yellow(ianaDBTLDs.length)}\n`);
   const prettyTypes = ianaDBTLDs
@@ -199,28 +328,64 @@ async function getTLDData(prevData) {
 
   // Combine using previous data, but use root zone as source of truth
   process.stderr.write('Combining with previous data\n');
-  tlds.forEach(o => {
-    // If this fails, the TLD in the root zone had no type information, which
-    // shouldn't happen. The list should be exhaustive
-    o.type = ianaDBTLDs.find(o2 => o.tld === o2.tld).type;
-  })
+  tlds.forEach(t => {
+    const ianaDBTLD = ianaDBTLDs.find(o2 => t.tld === o2.tld);
+    // IANA data should be exhaustive and define all TLDs in the root zone
+    _assert(ianaDBTLD, `'${t.tld}' must exist in the IANA DB but it didn't`);
+
+    t.type = ianaDBTLD.type;
+  });
   process.stderr.write('Combined\n');
 
-  // == 3. Brand TLD & TLD restrictions ==
+  // == 3. Load in period/sunrise/sunset data ==
+  process.stderr.write(chalk.bgWhite.black('== gTLDs with status periods ==\n'));
+  const sunriseSunsetTLDs = await getTLDsWithStatusPeriods();
+  process.stderr.write(`* Found gTLDs: ${chalk.yellow(sunriseSunsetTLDs.length)}\n`);
+  const prettyTLDsWithNoStatus = tlds
+    .filter(t => t.type === 'generic')
+    .filter(t => !['com', 'info', 'net', 'org', 'mobi'].includes(t.tld))
+    .filter(t => !sunriseSunsetTLDs.find(o => o.tld === t.tld))
+    .map(t => chalk.yellow(t.tld))
+    .join(', ');
+  process.stderr.write(`* gTLDs with no status: ${prettyTLDsWithNoStatus}\n`);
+  const prettyTLDsWithNotPast = sunriseSunsetTLDs
+    .filter(o => !o.isGenerallyAvailable)
+    .map(o => o.spec13 ? `*${chalk.gray(o.tld)}` : chalk.yellow(o.tld))
+    .join(', ');
+  process.stderr.write(`* gTLDs which haven't hit General Availability yet (*${chalk.gray('has spec 13')}): ${prettyTLDsWithNotPast}\n`);
+
+  process.stderr.write('Combining with previous data\n');
+  tlds
+    .filter(t => t.type === 'generic')
+    .filter(t => !['com', 'info', 'net', 'org', 'mobi'].includes(t.tld))
+    .forEach(t => {
+      const o = sunriseSunsetTLDs.find(o => o.tld === t.tld);
+      if (!o) {
+        // If not found, then it's not available
+        t.isInGeneralAvailability = false;
+        return;
+      }
+
+      t.periods = o.periods;
+      t.isInGeneralAvailability = o.isGenerallyAvailable;
+    });
+  process.stderr.write('Combined\n');
+
+  // == 4. Brand TLD & TLD restrictions ==
   process.stderr.write(chalk.bgWhite.black('== TLD information from registry agreements ==\n'));
   // This is data for which we don't have automation
   const manualData = {
     // generic
     ...mapReduceToObj(
-      ['com', 'info', 'net', 'org'],
+      ['com', 'info', 'net', 'org', 'mobi'],
       {}),
 
     // sponsorted (sTLD)
     ...mapReduceToObj(
-      ['aero', 'asia', 'cat', 'coop', 'edu', 'gov', 'int', 'jobs', 'mil', 'mobi', 'tel', 'travel', 'xxx'],
+      ['aero', 'asia', 'cat', 'coop', 'edu', 'gov', 'int', 'jobs', 'mil', 'museum', 'post', 'tel', 'travel', 'xxx'],
       { isBrand: false, hasRestrictions: true }),
 
-    // generic
+    // generic-restricted
     ...mapReduceToObj(
       ['biz', 'name', 'pro'],
       { isBrand: false, hasRestrictions: true }),
@@ -300,4 +465,8 @@ async function main() {
   const tldObjs = await getTLDData(prevData);
   process.stdout.write(JSON.stringify(tldObjs, null, 2));
 }
-main();
+
+// If run from CLI, run main()
+if(typeof module === 'undefined') {
+  main();
+}

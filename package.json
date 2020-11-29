@@ -22,5 +22,8 @@
     "node-fetch": "^2.6.1",
     "punycode": "^2.1.1"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "esm": "^3.2.25"
+  }
 }
