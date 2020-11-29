@@ -3576,12 +3576,6 @@
     "hasRestrictions": false
   },
   {
-    "tld": "jcp",
-    "type": "generic",
-    "isBrand": true,
-    "hasRestrictions": false
-  },
-  {
     "tld": "je",
     "type": "country-code"
   },
@@ -6183,12 +6177,6 @@
   },
   {
     "tld": "showtime",
-    "type": "generic",
-    "isBrand": true,
-    "hasRestrictions": false
-  },
-  {
-    "tld": "shriram",
     "type": "generic",
     "isBrand": true,
     "hasRestrictions": false
