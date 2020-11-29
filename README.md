@@ -37,8 +37,22 @@ Methodology:
   // If present, are there any restrictions for registering the TLD?
   // Only checks for "Specification 12" currently (see notes in code)
   // Not super accurate yet, and not currently implemented for ccTLDs!
-  "hasRestrictions": false
-},
+  "hasRestrictions": false,
+
+  // If the gTLD is in General Availability
+  // NOTE: This uses the end of the last listed period as there's no public data
+  // source for this...
+  // NOTE: omitted on non-generic TLDs
+  "isGenerallyAvailable": false,
+
+  // The periods of the gTLD, if any
+  // Currently just milliseconds since the Javascript Date() epoch
+  "periods": [{
+    "name": "Sunrise",
+    "open": 1397620800000,
+    "close": 1405396800000
+  }]
+}
 ```
 
 ## Running
