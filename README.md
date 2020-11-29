@@ -43,7 +43,7 @@ Methodology:
   // NOTE: This uses the end of the last listed period as there's no public data
   // source for this...
   // NOTE: omitted on non-generic TLDs
-  "isGenerallyAvailable": false,
+  "isInGeneralAvailability": false,
 
   // The periods of the gTLD, if any
   // Currently just milliseconds since the Javascript Date() epoch
