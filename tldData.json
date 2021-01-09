@@ -6504,9 +6504,15 @@
         "name": "Trademark Claims",
         "open": 1614643200000,
         "close": 1622419200000
+      },
+      {
+        "name": "Sunrise 2",
+        "open": 1610323200000,
+        "close": 1614470400000,
+        "type": "Limited Registration Period"
       }
     ],
-    "isInGeneralAvailability": true,
+    "isInGeneralAvailability": false,
     "isBrand": false,
     "hasRestrictions": false
   },
