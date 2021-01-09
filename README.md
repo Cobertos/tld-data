@@ -6,7 +6,7 @@
 
 # tld-data
 
-Accurate data on TLDs with a focus on registration restrictions. Data pulled weekly
+Accurate data on TLDs with a focus on which ones can actually be registered. Data pulled weekly
 
 Browse the data at [tld-data.com](https://tld-data.com)!
 

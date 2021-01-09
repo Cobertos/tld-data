@@ -1,7 +1,7 @@
 {
   "name": "tld-data-extended",
   "version": "1.1.0",
-  "description": "Data about TLDs, with more _brand_",
+  "description": "Accurate data on TLDs with a focus on which ones can actually be registered",
   "author": {
     "name": "cobertos",
     "email": "me+npm@cobertos.com",
