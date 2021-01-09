@@ -8,6 +8,8 @@
 
 Accurate data on TLDs with a focus on registration restrictions. Data pulled weekly
 
+Browse the data at [tld-data.com](https://tld-data.com)!
+
 Methodology:
 
 * Pull all TLDs from [DNS root zone](http://www.internic.net/domain/root.zone) for accuracy (disregards upcoming and terminated TLDs)
@@ -69,3 +71,7 @@ Or to reuse the old `isBrand` and `hasRestrictions` keys, you can run:
 node --experimental-modules --unhandled-rejections=strict fetchData.mjs --stdin --color < tldData.json > tldDataNew.json
 mv -f tldDataNew.json tldData.json
 ```
+
+## Contributing
+
+Contributing for [`tld-data.com` can be found here](https://github.com/Cobertos/tld-data.com).
