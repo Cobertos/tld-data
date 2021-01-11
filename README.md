@@ -67,9 +67,9 @@ You can run the command to generate all new data:
 
 Or to reuse the old `isBrand` and `hasRestrictions` keys, you can run:
 
-```
-node -r esm --unhandled-rejections=strict src/cli.js --stdin --color < tldData.json > tldDataNew.json
-mv -f tldDataNew.json tldData.json
+```console
+$ node -r esm --unhandled-rejections=strict src/cli.js --stdin --color < tldData.json > tldDataNew.json
+$ mv -f tldDataNew.json tldData.json
 ```
 
 ## Contributing
