@@ -1,10 +1,10 @@
-import { promisify } from 'util';
-import fetch from 'node-fetch';
+import nodeFetch from 'node-fetch';
 import chalk from 'chalk';
 import jsdom from 'jsdom';
 import punycode from 'punycode';
 import mapLimit from 'async/mapLimit.js';
-import argparse from 'argparse';
+import fetchRetry from 'fetch-retry';
+const fetch = fetchRetry(nodeFetch); // 3 retries, 1000ms delays
 const { JSDOM } = jsdom;
 
 // For future reference, here are some sources of information we passed over
@@ -48,19 +48,6 @@ Array.prototype.unique = function() {
   return Array.from(new Set(this));
 };
 
-async function fetchUntil200(...args) {
-  let retries = 3;
-  let resp = {};
-  while (resp.status !== 200 && retries > 0) {
-    resp = await fetch(...args);
-    retries -= 1;
-  }
-  if (!resp) {
-    throw new Error(`fetch ${args[0]} failed after 3 retries`);
-  }
-  return resp;
-}
-
 /**Assertion helper, custom message and error type
  */
 export function _assert(condition, message = "Assertion Error", error = Error) {
@@ -76,16 +63,16 @@ export function _assert(condition, message = "Assertion Error", error = Error) {
  * @returns {String[]} Array of all strings from the root zone. Punycode domains
  * (xn--) are decoded to unicode
  */
-async function getTLDsFromRootZone() {
+export async function getTLDsFromRootZone() {
   process.stderr.write('Fetching...\n');
-  const resp = await fetchUntil200('http://www.internic.net/domain/root.zone');
+  const resp = await fetch('http://www.internic.net/domain/root.zone');
   const text = await resp.text();
 
   process.stderr.write('\rParsing...\n');
   return text.split('\n')
     // Get up to first whitespace (the xxx.yyy.zzz. portion)
     .map(s => s.slice(0, s.search(/\s/)))
-    // The only '.' for TLDs will be at the end, filter out rest
+    // For TLDs, the first '.' will be at the end of the string, filter out the rest
     .filter(s => s.indexOf('.') === s.length - 1)
     .map(s => s.slice(0,-1))
     .filter(s => !!s)
@@ -110,9 +97,9 @@ async function getTLDsFromRootZone() {
  *     ['generic', 'country-code', 'sponsored', 'infrastructure', etc...]
  * * `.sponsor` - The sponsoring organization
  */
-async function getTLDInfoFromIANADB() {
+export async function getTLDInfoFromIANADB() {
   process.stderr.write('Fetching...\n');
-  const resp2 = await fetchUntil200('https://www.iana.org/domains/root/db');
+  const resp2 = await fetch('https://www.iana.org/domains/root/db');
   const text2 = await resp2.text();
 
   process.stderr.write('Parsing...\n');
@@ -161,9 +148,9 @@ async function getTLDInfoFromIANADB() {
  *     to a Specification 13 addition. The last bullet at specification 9 basically
  *     specifies it is a TLD only meant for registry and affiliates.
  */
-async function gTLDInfoFromRegistryAgreement(gTLD) {
+export async function gTLDInfoFromRegistryAgreement(gTLD) {
   process.stderr.write(`Fetching gTLD registry agreement page for ${gTLD}\n`);
-  const resp = await fetchUntil200(`https://www.icann.org/en/about/agreements/registries/${gTLD}`);
+  const resp = await fetch(`https://www.icann.org/en/about/agreements/registries/${gTLD}`);
   const text = await resp.text();
 
   process.stderr.write(`Parsing gTLD registry agreement page for ${gTLD}\n`);
@@ -177,7 +164,7 @@ async function gTLDInfoFromRegistryAgreement(gTLD) {
     .getAttribute('href');
 
   process.stderr.write(`Fetching gTLD registry agreement HTML for ${gTLD}\n`);
-  const resp2 = await fetchUntil200(`https://www.icann.org${baseRegistryAgreementHTMLHref}`);
+  const resp2 = await fetch(`https://www.icann.org${baseRegistryAgreementHTMLHref}`);
   const text2 = await resp2.text();
 
   const hasSpec12 = text2.includes("SPECIFICATION 12");
@@ -204,14 +191,13 @@ async function gTLDInfoFromRegistryAgreement(gTLD) {
  */
 export async function getTLDsWithStatusPeriods() {
   process.stderr.write(`Fetching gTLD sunrise, sunset data\n`);
-  const resp = await fetchUntil200('https://newgtlds.icann.org/program-status/sunrise-claims-periods.xls');
+  const resp = await fetch('https://newgtlds.icann.org/program-status/sunrise-claims-periods.xls');
   const text = await resp.text();
 
   process.stderr.write(`Parsing gTLD sunrise, sunset data\n`);
   // So ironically... this is not an .xls file (even though the site says so?) but
   // an HTML table... So that's cool and easier to parse.
   const dom = new JSDOM(text);
-  dom.window.document.querySelector('tbody');
   const ret = Array.from(dom.window.document.querySelectorAll('tbody tr'))
     .map(tr => Array.from(tr.children).map(td => td.textContent.trim()))
     .map((rows) => {
@@ -302,7 +288,7 @@ export async function getTLDsWithStatusPeriods() {
  * * `.isBrand` - If present, is a brand TLD (only .type generic will have)
  * * `.hasRestrictions` - If present, the TLD has restrictions for registering
  */
-async function getTLDData(prevData) {
+export async function getTLDData(prevData) {
   // == 1. Download the root zone and get all TLDs ==
   process.stderr.write(chalk.bgWhite.black('== TLDs from root zone ==\n'));
   const rootZoneTLDStrs = await getTLDsFromRootZone();
@@ -418,55 +404,4 @@ async function getTLDData(prevData) {
   });
 
   return tlds;
-}
-
-// Reads full buffer out of stream
-async function read(stream) {
-  const chunks = [];
-  for await (const chunk of stream) chunks.push(chunk); 
-  return Buffer.concat(chunks).toString('utf8');
-}
-
-// Checks stream for any previously output data to use to supplement request
-// heavy portions of the update loop
-async function readPrevious(stream) {
-  const inStr = await read(stream);
-  if(inStr) {
-    // Parse the previous data and return the JSON
-    // object, but with the TLDs mapped to keys
-    const inObj = JSON.parse(inStr);
-    return inObj
-      .map(({tld, isBrand, hasRestrictions}) => {
-        return {
-          [tld]: { isBrand, hasRestrictions }
-        };
-      })
-      .reduce(Object.assign, {});
-  }
-}
-
-async function main() {
-  // Parse args
-  const parser = new argparse.ArgumentParser({
-    description: 'Fetch TLD Data'
-  });
-
-  // TODO: Version... why does node make it so hard to just make normal modules
-  // work...
-  parser.add_argument('-v', '--version', { action: 'version', version: '1.1.0' });
-  parser.add_argument('-s', '--stdin', { action: 'store_true', help: 'Read previously output data on STDIN to reuse some old data to reduce amount of web scraping requests needed.' });
-  parser.add_argument('--color', { action: 'store_true', help: 'Pass in for chalk to force color output (should work by default... but doesnt)' });
-
-  const args = parser.parse_args();
-  let prevData;
-  if(args.stdin) {
-    prevData = await readPrevious(process.stdin);
-  }
-  const tldObjs = await getTLDData(prevData);
-  process.stdout.write(JSON.stringify(tldObjs, null, 2));
-}
-
-// If run from CLI, run main()
-if(typeof module === 'undefined') {
-  main();
 }

@@ -12,18 +12,28 @@
     "url": "https://github.com/Cobertos/tld-data"
   },
   "scripts": {
-    "fetch": "node --experimental-modules --unhandled-rejections=strict fetchData.mjs > tldData.json"
+    "test": "ava test/test.js",
+    "fetch": "node -r esm --unhandled-rejections=strict cli.js > tldData.json"
   },
   "dependencies": {
     "argparse": "^2.0.1",
     "async": "^3.2.0",
     "chalk": "^4.1.0",
+    "esm": "^3.2.25",
+    "fetch-retry": "^4.0.1",
     "jsdom": "^16.4.0",
     "node-fetch": "^2.6.1",
     "punycode": "^2.1.1"
   },
   "license": "MIT",
   "devDependencies": {
-    "esm": "^3.2.25"
+    "ava": "^3.15.0",
+    "fetch-mock": "^9.11.0",
+    "proxyquire": "^2.1.3"
+  },
+  "ava": {
+    "require": [
+      "esm"
+    ]
   }
 }

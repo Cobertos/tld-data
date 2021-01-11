@@ -1,0 +1,53 @@
+com.      172800  IN  NS  a.gtld-servers.net.
+com.      172800  IN  NS  b.gtld-servers.net.
+com.      172800  IN  NS  c.gtld-servers.net.
+com.      172800  IN  NS  d.gtld-servers.net.
+com.      172800  IN  NS  e.gtld-servers.net.
+com.      172800  IN  NS  f.gtld-servers.net.
+com.      172800  IN  NS  g.gtld-servers.net.
+com.      172800  IN  NS  h.gtld-servers.net.
+com.      172800  IN  NS  i.gtld-servers.net.
+com.      172800  IN  NS  j.gtld-servers.net.
+com.      172800  IN  NS  k.gtld-servers.net.
+com.      172800  IN  NS  l.gtld-servers.net.
+com.      172800  IN  NS  m.gtld-servers.net.
+com.      86400 IN  DS  30909 8 2 E2D3C916F6DEEAC73294E8268FB5885044A833FC5459588F4A9184CFC41A5766
+com.      86400 IN  RRSIG DS 8 1 86400 20210122050000 20210109040000 42351 . xx
+com.      86400 IN  NSEC  comcast. NS DS RRSIG NSEC
+com.      86400 IN  RRSIG NSEC 8 1 86400 20210122050000 20210109040000 42351 . xx
+org.      172800  IN  NS  a0.org.afilias-nst.info.
+org.      172800  IN  NS  a2.org.afilias-nst.info.
+org.      172800  IN  NS  b0.org.afilias-nst.org.
+org.      172800  IN  NS  b2.org.afilias-nst.org.
+org.      172800  IN  NS  c0.org.afilias-nst.info.
+org.      172800  IN  NS  d0.org.afilias-nst.org.
+org.      86400 IN  DS  26974 8 2 4FEDE294C53F438A158C41D39489CD78A86BEB0D8A0AEAFF14745C0D16E1DE32
+org.      86400 IN  RRSIG DS 8 1 86400 20210122050000 20210109040000 42351 . xx
+org.      86400 IN  NSEC  organic. NS DS RRSIG NSEC
+org.      86400 IN  RRSIG NSEC 8 1 86400 20210122050000 20210109040000 42351 . xx
+net.      172800  IN  NS  a.gtld-servers.net.
+net.      172800  IN  NS  b.gtld-servers.net.
+net.      172800  IN  NS  c.gtld-servers.net.
+net.      172800  IN  NS  d.gtld-servers.net.
+net.      172800  IN  NS  e.gtld-servers.net.
+net.      172800  IN  NS  f.gtld-servers.net.
+net.      172800  IN  NS  g.gtld-servers.net.
+net.      172800  IN  NS  h.gtld-servers.net.
+net.      172800  IN  NS  i.gtld-servers.net.
+net.      172800  IN  NS  j.gtld-servers.net.
+net.      172800  IN  NS  k.gtld-servers.net.
+net.      172800  IN  NS  l.gtld-servers.net.
+net.      172800  IN  NS  m.gtld-servers.net.
+net.      86400 IN  DS  35886 8 2 7862B27F5F516EBE19680444D4CE5E762981931842C465F00236401D8BD973EE
+net.      86400 IN  RRSIG DS 8 1 86400 20210122050000 20210109040000 42351 . xx
+net.      86400 IN  NSEC  netbank. NS DS RRSIG NSEC
+net.      86400 IN  RRSIG NSEC 8 1 86400 20210122050000 20210109040000 42351 . xx
+ns1.admin.net.    172800  IN  A 198.73.186.1
+ns2.admin.net.    172800  IN  A 108.61.25.122
+ns2.admin.net.    172800  IN  AAAA  2001:19f0:300:1007:0:0:0:cafe
+ns3.admin.net.    172800  IN  A 87.98.180.44
+ns3.admin.net.    172800  IN  AAAA  2001:41d0:2:8adf:0:0:0:2
+ns4.admin.net.    172800  IN  A 103.25.58.26
+ns4.admin.net.    172800  IN  AAAA  2406:d501:0:0:0:0:47e3:2a7c
+ns5.admin.net.    172800  IN  A 188.165.33.42
+ns5.admin.net.    172800  IN  AAAA  2001:41d0:8:5c79:0:0:0:3

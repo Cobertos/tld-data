@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr class="fuzzy-search-first-header">
+          <th class="views-field header-empty left" colspan="1">&nbsp;</th>
+          <th class="views-field header-data" colspan="3">Sunrise</th>
+          <th class="views-field header-data" colspan="2">Trademark Claims</th>
+          <th class="views-field header-data" colspan="4">Other Periods</th>
+          <th class="views-field header-empty right" colspan="1">&nbsp;</th>
+        </tr>
+        <tr>
+          <th>TLD</th>
+          <th>Start/End Date Sunrise</th>
+          <th>Sunrise Open</th>
+          <th>Sunrise Close</th>
+          <th>Trademark Claims Open</th>
+          <th>Trademark Claims Close</th>
+          <th>Other Period From</th>
+          <th>Other Period Name</th>
+          <th>Other Period To</th>
+          <th>Other Period Type</th>
+          <th>Last Updated</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="odd">
+          <td>forum</td>
+          <td>Start Date Sunrise</td>
+          <td>16 Nov 2020</td>
+          <td>16 Dec 2020</td>
+          <td>2 Mar 2021</td>
+          <td>31 May 2021</td>
+          <td>11 Jan 2021</td>
+          <td>Sunrise 2</td>
+          <td>28 Feb 2021</td>
+          <td>Limited Registration Period</td>
+          <td>6 Jan 2021</td>
+        </tr>
+        <tr class="even">
+          <td>xn--80adxhks</td>
+          <td>Start Date Sunrise</td>
+          <td>10 Jun 2014</td>
+          <td>10 Jul 2014</td>
+          <td>24 Sep 2014</td>
+          <td>4 Jan 2022</td>
+          <td>4 Sep 2014, 12 May 2014, 15 Jul 2014, 19 Aug 2014, 20 Apr 2016</td>
+          <td>Limited Registration Period III, -, Limited Registration Period I, Limited Registration Period II, .xn--80adxhks - exclusive registration start-date period information submission</td>
+          <td>22 Sep 2014, 10 Jul 2014, 13 Aug 2014, 25 Aug 2014, 20 May 2016</td>
+          <td>Limited Registration Period, Qualified Launch Program, Limited Registration Period, Limited Registration Period, Exclusive Registration Period</td>
+          <td>21 Dec 2020</td>
+        </tr>
+        <tr class="odd">
+          <td>itv</td>
+          <td>Spec 13 - .BRAND TLD</td>
+          <td></td>
+          <td></td>
+          <td>26 Sep 2016</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>4 Sep 2020</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

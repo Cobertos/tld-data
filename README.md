@@ -59,16 +59,16 @@ Methodology:
 
 ## Running
 
-`fetchData.js` prints data to stdout and takes previously found data from stdin (to reuse in certain portions to reduce HTTP requests).
+`cli.js` prints data to stdout and takes previously found data from stdin (to reuse in certain portions to reduce HTTP requests).
 
 You can run the command to generate all new data:
 
-`node --experimental-modules --unhandled-rejections=strict fetchData.mjs --color > tldData.json`
+`node -r esm --unhandled-rejections=strict cli.js --color > tldData.json`
 
 Or to reuse the old `isBrand` and `hasRestrictions` keys, you can run:
 
 ```
-node --experimental-modules --unhandled-rejections=strict fetchData.mjs --stdin --color < tldData.json > tldDataNew.json
+node -r esm --unhandled-rejections=strict cli.js --stdin --color < tldData.json > tldDataNew.json
 mv -f tldDataNew.json tldData.json
 ```
 

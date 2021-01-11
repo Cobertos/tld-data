@@ -1,0 +1,28 @@
+name: Package Tests
+
+on: 
+  push:
+    branches:
+      - owo
+  pull_request:
+    branches:
+      - owo
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout repo @ latest release
+      - uses: actions/checkout@v2
+      # Install languages
+      - name: Set up Nodejs 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      # Install dependencies
+      - name: npm ci
+        run: npm ci
+      # Run tests
+      - name: Run tests
+        run: npm run test

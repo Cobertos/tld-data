@@ -23,6 +23,9 @@ jobs:
       # Install dependencies
       - name: npm ci
         run: npm ci
+      # Run unit tests
+      - name: Run tests
+        run: npm run test
       # Fetch data
       - name: npm run fetch
         run: npm run fetch

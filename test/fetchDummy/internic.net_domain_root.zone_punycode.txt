@@ -1,0 +1,27 @@
+com.      172800  IN  NS  a.gtld-servers.net.
+com.      172800  IN  NS  b.gtld-servers.net.
+com.      172800  IN  NS  c.gtld-servers.net.
+com.      172800  IN  NS  d.gtld-servers.net.
+com.      172800  IN  NS  e.gtld-servers.net.
+com.      172800  IN  NS  f.gtld-servers.net.
+com.      172800  IN  NS  g.gtld-servers.net.
+com.      172800  IN  NS  h.gtld-servers.net.
+com.      172800  IN  NS  i.gtld-servers.net.
+com.      172800  IN  NS  j.gtld-servers.net.
+com.      172800  IN  NS  k.gtld-servers.net.
+com.      172800  IN  NS  l.gtld-servers.net.
+com.      172800  IN  NS  m.gtld-servers.net.
+com.      86400 IN  DS  30909 8 2 E2D3C916F6DEEAC73294E8268FB5885044A833FC5459588F4A9184CFC41A5766
+com.      86400 IN  RRSIG DS 8 1 86400 20210122050000 20210109040000 42351 . xx
+com.      86400 IN  NSEC  comcast. NS DS RRSIG NSEC
+com.      86400 IN  RRSIG NSEC 8 1 86400 20210122050000 20210109040000 42351 . xx
+xn--3e0b707e.   172800  IN  NS  b.dns.kr.
+xn--3e0b707e.   172800  IN  NS  c.dns.kr.
+xn--3e0b707e.   172800  IN  NS  d.dns.kr.
+xn--3e0b707e.   172800  IN  NS  e.dns.kr.
+xn--3e0b707e.   172800  IN  NS  f.dns.kr.
+xn--3e0b707e.   172800  IN  NS  g.dns.kr.
+xn--3e0b707e.   86400 IN  DS  48379 8 2 88372B74ADB821C79FAC26E1883CC6BD96FF6EB97AAA1A9486BB4B3B26076D02
+xn--3e0b707e.   86400 IN  RRSIG DS 8 1 86400 20210122050000 20210109040000 42351 . xx
+xn--3e0b707e.   86400 IN  NSEC  xn--3hcrj9c. NS DS RRSIG NSEC
+xn--3e0b707e.   86400 IN  RRSIG NSEC 8 1 86400 20210122050000 20210109040000 42351 . xx
