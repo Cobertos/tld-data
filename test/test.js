@@ -9,7 +9,7 @@ const readFile = promisify(fs.readFile);
 const fetchMock = _fetchMock.sandbox();
 const { getTLDsFromRootZone, getTLDInfoFromIANADB, getTLDsWithStatusPeriods, 
   gTLDInfoFromRegistryAgreement, getTLDData } = 
-  proxyquire('../fetchData.js', { 'node-fetch': fetchMock });
+  proxyquire('../src/fetch.js', { 'node-fetch': fetchMock });
 
 test.beforeEach('reset globals', (t) => {
   fetchMock.restore(); // Restore mocked endpoints
