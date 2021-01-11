@@ -39,6 +39,10 @@ Array.prototype.unique = arrayPrototypeUnique;
 export async function getTLDsFromRootZone() {
   process.stderr.write('Fetching...\n');
   const resp = await fetch('http://www.internic.net/domain/root.zone');
+  if (!resp.ok) {
+    console.error(resp);
+    throw new Error(`Fetch failed with '${resp.statusCode} ${resp.statusMessage}'`);
+  }
   const text = await resp.text();
 
   process.stderr.write('\rParsing...\n');
@@ -72,11 +76,15 @@ export async function getTLDsFromRootZone() {
  */
 export async function getTLDInfoFromIANADB() {
   process.stderr.write('Fetching...\n');
-  const resp2 = await fetch('https://www.iana.org/domains/root/db');
-  const text2 = await resp2.text();
+  const resp = await fetch('https://www.iana.org/domains/root/db');
+  if (!resp.ok) {
+    console.error(resp);
+    throw new Error(`Fetch failed with '${resp.statusCode} ${resp.statusMessage}'`);
+  }
+  const text = await resp.text();
 
   process.stderr.write('Parsing...\n');
-  const dom = new JSDOM(text2);
+  const dom = new JSDOM(text);
   return Array.from(dom.window.document.querySelectorAll('#tld-table tbody tr'))
     .map(tr => Array.from(tr.children).map(td => td.textContent.trim()))
     .map(([tld, type, sponsor]) => {
@@ -124,10 +132,20 @@ export async function getTLDInfoFromIANADB() {
 export async function gTLDInfoFromRegistryAgreement(gTLD) {
   process.stderr.write(`Fetching gTLD registry agreement page for ${gTLD}\n`);
   const resp = await fetch(`https://www.icann.org/en/about/agreements/registries/${gTLD}`);
+  if (!resp.ok) {
+    console.error(resp);
+    throw new Error(`Fetch for '${gTLD}' failed with '${resp.statusCode} ${resp.statusMessage}'`);
+  }
   const text = await resp.text();
 
   process.stderr.write(`Parsing gTLD registry agreement page for ${gTLD}\n`);
   const dom = new JSDOM(text);
+  if (!dom.window.document.querySelector('#agmthtml a')) {
+    console.log('Dumping dom in weird error case');
+    console.log(dom);
+  }
+  _assert(dom.window.document.querySelector('#agmthtml a'), `'#agmthtml a' on ${gTLD} should be present`);
+
   const hasSpec13 = !!dom.window.document.querySelector('#spec13');
   const hasSpec9Exemption = !!dom.window.document.querySelector('#spec9') &&
     !dom.window.document.querySelector('#spec9').textContent.match(/withdrawal/i);
@@ -138,6 +156,10 @@ export async function gTLDInfoFromRegistryAgreement(gTLD) {
 
   process.stderr.write(`Fetching gTLD registry agreement HTML for ${gTLD}\n`);
   const resp2 = await fetch(`https://www.icann.org${baseRegistryAgreementHTMLHref}`);
+  if (!resp2.ok) {
+    console.error(resp2);
+    throw new Error(`Fetch2 for '${gTLD}' failed with '${resp2.statusCode} ${resp2.statusMessage}'`);
+  }
   const text2 = await resp2.text();
 
   const hasSpec12 = text2.includes("SPECIFICATION 12");
@@ -165,6 +187,10 @@ export async function gTLDInfoFromRegistryAgreement(gTLD) {
 export async function getTLDsWithStatusPeriods() {
   process.stderr.write(`Fetching gTLD sunrise, sunset data\n`);
   const resp = await fetch('https://newgtlds.icann.org/program-status/sunrise-claims-periods.xls');
+  if (!resp.ok) {
+    console.error(resp);
+    throw new Error(`Fetch failed with '${resp.statusCode} ${resp.statusMessage}'`);
+  }
   const text = await resp.text();
 
   process.stderr.write(`Parsing gTLD sunrise, sunset data\n`);
