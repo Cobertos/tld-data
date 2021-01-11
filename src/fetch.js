@@ -4,8 +4,12 @@ import jsdom from 'jsdom';
 import punycode from 'punycode';
 import mapLimit from 'async/mapLimit.js';
 import fetchRetry from 'fetch-retry';
+import { diffArrayUnordered, mapReduceToObj, arrayPrototypeUnique,
+  _assert } from './utils.js';
 const fetch = fetchRetry(nodeFetch); // 3 retries, 1000ms delays
 const { JSDOM } = jsdom;
+Array.prototype.unique = arrayPrototypeUnique;
+
 
 // For future reference, here are some sources of information we passed over
 //
@@ -24,37 +28,6 @@ const { JSDOM } = jsdom;
 //
 // https://www.icann.org/resources/registries/gtlds/v1/newgtlds.csv
 // Has delegation date, application Id, and signing date got gTLD
-
-function diffArrayUnordered(actual, expected) {
-  // In actual but not expected
-  return actual
-    .filter(i => !expected.includes(i))
-    .map(i => `+${chalk.green(i)}`)
-    .join(', ') + '; ' +
-  // In expected by not actual
-  expected
-    .filter(i => !actual.includes(i))
-    .map(i => `-${chalk.red(i)}`)
-    .join(', ');
-}
-
-function mapReduceToObj(arr, obj) {
-  return arr
-    .map(_ => ({ [_]: obj }))
-    .reduce(Object.assign, {});
-}
-
-Array.prototype.unique = function() {
-  return Array.from(new Set(this));
-};
-
-/**Assertion helper, custom message and error type
- */
-export function _assert(condition, message = "Assertion Error", error = Error) {
-  if (!condition) {
-    throw new error(message);
-  }
-}
 
 /**
  * Queries DNS root zone for all TLD strings from

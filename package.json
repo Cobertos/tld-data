@@ -13,7 +13,7 @@
   },
   "scripts": {
     "test": "ava test/test.js",
-    "fetch": "node -r esm --unhandled-rejections=strict cli.js > tldData.json"
+    "fetch": "node -r esm --unhandled-rejections=strict src/cli.js --color > tldData.json"
   },
   "dependencies": {
     "argparse": "^2.0.1",

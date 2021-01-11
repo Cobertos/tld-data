@@ -1,5 +1,5 @@
 import argparse from 'argparse';
-import { getTLDData } from './fetchData.js';
+import { getTLDData } from './fetch.js';
 
 // Reads full buffer out of stream
 async function read(stream) {
