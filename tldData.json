@@ -4293,7 +4293,7 @@
         "type": "Limited Registration Period"
       }
     ],
-    "isInGeneralAvailability": false,
+    "isInGeneralAvailability": true,
     "isBrand": false,
     "hasRestrictions": false
   },
@@ -17651,7 +17651,7 @@
     "tld": "tvs",
     "type": "generic",
     "isInGeneralAvailability": false,
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
