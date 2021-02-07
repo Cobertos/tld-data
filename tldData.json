@@ -15990,6 +15990,24 @@
   {
     "tld": "spa",
     "type": "generic",
+    "periods": [
+      {
+        "name": "Sunrise",
+        "open": 1618876800000,
+        "close": 1621468800000
+      },
+      {
+        "name": "Trademark Claims",
+        "open": 1625097600000,
+        "close": 1632960000000
+      },
+      {
+        "name": "Landrush",
+        "open": 1621987200000,
+        "close": 1624492800000,
+        "type": "Limited Registration Period"
+      }
+    ],
     "isInGeneralAvailability": false,
     "isBrand": false,
     "hasRestrictions": false
