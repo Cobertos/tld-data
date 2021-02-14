@@ -19148,6 +19148,10 @@
     "hasRestrictions": false
   },
   {
+    "tld": "ישראל",
+    "type": "country-code"
+  },
+  {
     "tld": "موقع",
     "type": "generic",
     "periods": [
