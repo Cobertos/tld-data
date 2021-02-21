@@ -3065,13 +3065,6 @@
     "hasRestrictions": false
   },
   {
-    "tld": "caseih",
-    "type": "generic",
-    "isInGeneralAvailability": false,
-    "isBrand": true,
-    "hasRestrictions": false
-  },
-  {
     "tld": "cash",
     "type": "generic",
     "periods": [
@@ -11871,13 +11864,6 @@
     ],
     "isInGeneralAvailability": true,
     "isBrand": false,
-    "hasRestrictions": false
-  },
-  {
-    "tld": "newholland",
-    "type": "generic",
-    "isInGeneralAvailability": false,
-    "isBrand": true,
     "hasRestrictions": false
   },
   {
