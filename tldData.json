@@ -3289,7 +3289,8 @@
       },
       {
         "name": "Trademark Claims",
-        "open": 1447027200000
+        "open": 1447027200000,
+        "close": 1613952000000
       }
     ],
     "isInGeneralAvailability": true,
@@ -6505,7 +6506,7 @@
         "type": "Limited Registration Period"
       }
     ],
-    "isInGeneralAvailability": false,
+    "isInGeneralAvailability": true,
     "isBrand": false,
     "hasRestrictions": false
   },
