@@ -566,14 +566,14 @@
     "tld": "alibaba",
     "type": "generic",
     "isInGeneralAvailability": false,
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
     "tld": "alipay",
     "type": "generic",
     "isInGeneralAvailability": false,
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -1734,7 +1734,7 @@
         "type": "Limited Registration Period"
       }
     ],
-    "isInGeneralAvailability": false,
+    "isInGeneralAvailability": true,
     "isBrand": false,
     "hasRestrictions": false
   },
@@ -7773,7 +7773,7 @@
         "type": "Limited Registration Period"
       }
     ],
-    "isInGeneralAvailability": false,
+    "isInGeneralAvailability": true,
     "isBrand": false,
     "hasRestrictions": false
   },
@@ -15718,7 +15718,7 @@
         "type": "Limited Registration Period"
       }
     ],
-    "isInGeneralAvailability": false,
+    "isInGeneralAvailability": true,
     "isBrand": false,
     "hasRestrictions": false
   },
@@ -16706,7 +16706,7 @@
     "tld": "taobao",
     "type": "generic",
     "isInGeneralAvailability": false,
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -17231,7 +17231,7 @@
     "tld": "tmall",
     "type": "generic",
     "isInGeneralAvailability": false,
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
