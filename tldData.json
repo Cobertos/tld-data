@@ -679,6 +679,13 @@
   {
     "tld": "amazon",
     "type": "generic",
+    "periods": [
+      {
+        "name": "Trademark Claims",
+        "open": 1615420800000,
+        "close": 1623024000000
+      }
+    ],
     "isInGeneralAvailability": false,
     "isBrand": true,
     "hasRestrictions": false
