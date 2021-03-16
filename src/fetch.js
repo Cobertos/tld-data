@@ -1,4 +1,5 @@
 import nodeFetch from 'node-fetch';
+import dayjs from 'dayjs';
 import chalk from 'chalk';
 import jsdom from 'jsdom';
 import punycode from 'punycode';
@@ -219,8 +220,8 @@ export async function getTLDsWithStatusPeriods() {
 
         return [{
           name,
-          ...(open ? { open: Date.parse(open) } : {} ),
-          ...(close ? { close: Date.parse(close) } : {} ),
+          ...(open ? { open: dayjs(open, 'D MMM YYYY', true) } : {} ),
+          ...(close ? { close: dayjs(close, 'D MMM YYYY', true) } : {} ),
           ...(type ? { type } : {} ),
         }];
       }
@@ -262,12 +263,25 @@ export async function getTLDsWithStatusPeriods() {
         .reduce((acc, itm) => acc > itm ? acc : itm, -1);
       //const generalAvailabilityGuess2 = Date.parse(trademarkClaimsCloseDate) - (90 * 24 * 60 * 60 * 1000); //NaN if date fails to parse
       const isGenerallyAvailable = generalAvailabilityGuess1 === -1 ?
-        false : generalAvailabilityGuess1 < Date.now();
+        false : generalAvailabilityGuess1.isBefore(dayjs());
+
+      // Convert periods to the output objects (no dayjs())
+      const outPeriods = periods.slice()
+        .map(p => {
+          const ret = Object.assign({}, p);
+          if (ret.open) {
+            ret.open = ret.open.format('YYYY-MM-DD')
+          }
+          if (ret.close) {
+            ret.close = ret.close.format('YYYY-MM-DD')
+          }
+          return ret;
+        });
 
       return {
         tld: punycode.toUnicode(tld),
         spec13: type.trim() === 'Spec 13 - .BRAND TLD',
-        periods,
+        periods: outPeriods,
         isGenerallyAvailable
       };
     })

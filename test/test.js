@@ -1,5 +1,6 @@
 import fs from 'fs';
 import { promisify } from 'util';
+import dayjs from 'dayjs';
 import test from 'ava';
 import _fetchMock from 'fetch-mock';
 import proxyquire from 'proxyquire';
@@ -95,63 +96,63 @@ test.serial('getTLDsWithStatusPeriods - Parses period info out of table, handlin
     spec13: false,
     periods: [{
       name: 'Sunrise',
-      open: Date.parse('16 Nov 2020'),
-      close: Date.parse('16 Dec 2020'),
+      open: dayjs('16 Nov 2020', 'D MMM YYYY', true).format('YYYY-MM-DD'),
+      close: dayjs('16 Dec 2020', 'D MMM YYYY', true).format('YYYY-MM-DD'),
     }, {
       name: 'Trademark Claims',
-      open: Date.parse('2 Mar 2021'),
-      close: Date.parse('31 May 2021'),
+      open: dayjs('2 Mar 2021', 'D MMM YYYY', true).format('YYYY-MM-DD'),
+      close: dayjs('31 May 2021', 'D MMM YYYY', true).format('YYYY-MM-DD'),
     }, {
       name: 'Sunrise 2',
-      open: Date.parse('11 Jan 2021'),
-      close: Date.parse('28 Feb 2021'),
+      open: dayjs('11 Jan 2021', 'D MMM YYYY', true).format('YYYY-MM-DD'),
+      close: dayjs('28 Feb 2021', 'D MMM YYYY', true).format('YYYY-MM-DD'),
       type: 'Limited Registration Period'
     }],
-    isGenerallyAvailable: Date.now() > Date.parse('28 Feb 2021')
+    isGenerallyAvailable: dayjs().isAfter(dayjs('28 Feb 2021', 'D MMM YYYY', true))
   }, {
     tld: 'москва',
     spec13: false,
     periods: [{
       name: 'Sunrise',
-      open: Date.parse('10 Jun 2014'),
-      close: Date.parse('10 Jul 2014'),
+      open: dayjs('10 Jun 2014', 'D MMM YYYY', true).format('YYYY-MM-DD'),
+      close: dayjs('10 Jul 2014', 'D MMM YYYY', true).format('YYYY-MM-DD'),
     }, {
       name: 'Trademark Claims',
-      open: Date.parse('24 Sep 2014'),
-      close: Date.parse('4 Jan 2022'),
+      open: dayjs('24 Sep 2014', 'D MMM YYYY', true).format('YYYY-MM-DD'),
+      close: dayjs('4 Jan 2022', 'D MMM YYYY', true).format('YYYY-MM-DD'),
     }, {
       name: 'Limited Registration Period III',
-      open: Date.parse('4 Sep 2014'),
-      close: Date.parse('22 Sep 2014'),
+      open: dayjs('4 Sep 2014', 'D MMM YYYY', true).format('YYYY-MM-DD'),
+      close: dayjs('22 Sep 2014', 'D MMM YYYY', true).format('YYYY-MM-DD'),
       type: 'Limited Registration Period'
     }, {
       name: '-',
-      open: Date.parse('12 May 2014'),
-      close: Date.parse('10 Jul 2014'),
+      open: dayjs('12 May 2014', 'D MMM YYYY', true).format('YYYY-MM-DD'),
+      close: dayjs('10 Jul 2014', 'D MMM YYYY', true).format('YYYY-MM-DD'),
       type: 'Qualified Launch Program'
     }, {
       name: 'Limited Registration Period I',
-      open: Date.parse('15 Jul 2014'),
-      close: Date.parse('13 Aug 2014'),
+      open: dayjs('15 Jul 2014', 'D MMM YYYY', true).format('YYYY-MM-DD'),
+      close: dayjs('13 Aug 2014', 'D MMM YYYY', true).format('YYYY-MM-DD'),
       type: 'Limited Registration Period'
     }, {
       name: 'Limited Registration Period II',
-      open: Date.parse('19 Aug 2014'),
-      close: Date.parse('25 Aug 2014'),
+      open: dayjs('19 Aug 2014', 'D MMM YYYY', true).format('YYYY-MM-DD'),
+      close: dayjs('25 Aug 2014', 'D MMM YYYY', true).format('YYYY-MM-DD'),
       type: 'Limited Registration Period'
     }, {
       name: '.xn--80adxhks - exclusive registration start-date period information submission',
-      open: Date.parse('20 Apr 2016'),
-      close: Date.parse('20 May 2016'),
+      open: dayjs('20 Apr 2016', 'D MMM YYYY', true).format('YYYY-MM-DD'),
+      close: dayjs('20 May 2016', 'D MMM YYYY', true).format('YYYY-MM-DD'),
       type: 'Exclusive Registration Period'
     }],
-    isGenerallyAvailable: Date.now() > Date.parse('22 Sep 2014')
+    isGenerallyAvailable: dayjs().isAfter(dayjs('22 Sep 2014', 'D MMM YYYY', true)),
   },  {
     tld: 'itv',
     spec13: true,
     periods: [{
       name: 'Trademark Claims',
-      open: Date.parse('26 Sep 2016'),
+      open: dayjs('26 Sep 2016', 'D MMM YYYY', true).format('YYYY-MM-DD'),
     }],
     isGenerallyAvailable: false
   }]);
