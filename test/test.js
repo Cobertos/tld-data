@@ -108,7 +108,7 @@ test.serial('getTLDsWithStatusPeriods - Parses period info out of table, handlin
       close: dayjs('28 Feb 2021', 'D MMM YYYY', true).format('YYYY-MM-DD'),
       type: 'Limited Registration Period'
     }],
-    isGenerallyAvailable: dayjs().isAfter(dayjs('28 Feb 2021', 'D MMM YYYY', true))
+    isNotGenerallyAvailable: dayjs().isBefore(dayjs('28 Feb 2021', 'D MMM YYYY', true))
   }, {
     tld: 'москва',
     spec13: false,
@@ -146,7 +146,7 @@ test.serial('getTLDsWithStatusPeriods - Parses period info out of table, handlin
       close: dayjs('20 May 2016', 'D MMM YYYY', true).format('YYYY-MM-DD'),
       type: 'Exclusive Registration Period'
     }],
-    isGenerallyAvailable: dayjs().isAfter(dayjs('22 Sep 2014', 'D MMM YYYY', true)),
+    isNotGenerallyAvailable: dayjs().isBefore(dayjs('22 Sep 2014', 'D MMM YYYY', true)),
   },  {
     tld: 'itv',
     spec13: true,
@@ -154,7 +154,7 @@ test.serial('getTLDsWithStatusPeriods - Parses period info out of table, handlin
       name: 'Trademark Claims',
       open: dayjs('26 Sep 2016', 'D MMM YYYY', true).format('YYYY-MM-DD'),
     }],
-    isGenerallyAvailable: false
+    isNotGenerallyAvailable: true
   }]);
 });
 

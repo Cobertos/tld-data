@@ -44,11 +44,12 @@ Methodology:
     // Not super accurate yet, and not currently implemented for ccTLDs!
     "hasRestrictions": false,
 
-    // If the gTLD is in General Availability
-    // NOTE: This uses the end of the last listed period as there's no public data
-    // source for this...
+    // If the gTLD is NOT in General Availability (useful for filtering out domains
+    // that are too new)
+    // NOTE: This is NOT PARTICULARLY ACCURATE. This uses the end of the last listed
+    // period as there's no well-maintained public data source for this...
     // NOTE: omitted on non-generic TLDs
-    "isInGeneralAvailability": false,
+    "isNotInGeneralAvailability": false,
 
     // The periods of the gTLD, in ISO8601 date format (no time)
     "periods": [{

@@ -182,7 +182,7 @@ export async function gTLDInfoFromRegistryAgreement(gTLD) {
  *   .periods.open - Open date of the period (might be omitted)
  *   .periods.close - Close date of the period (might be omitted)
  *   .periods.type - For "other periods", the string in the type field (might be omitted)
- * .isGenerallyAvailable - Whether or not all it's in General Availability (NOTE: NOT ACCURATE)
+ * .isNotGenerallyAvailable - If the TLD is NOT in General Availability, therefore not registerable (NOTE: NOT ACCURATE)
  * ```
  */
 export async function getTLDsWithStatusPeriods() {
@@ -260,10 +260,16 @@ export async function getTLDsWithStatusPeriods() {
         .map(p => p.close)
         .filter(d => !!d)
         // Find highest
-        .reduce((acc, itm) => acc > itm ? acc : itm, -1);
+        .reduce((acc, itm) => {
+          if (acc === undefined) {
+            return itm;
+          }
+          return acc.isAfter(itm) ? acc : itm;
+        }, undefined);
       //const generalAvailabilityGuess2 = Date.parse(trademarkClaimsCloseDate) - (90 * 24 * 60 * 60 * 1000); //NaN if date fails to parse
-      const isGenerallyAvailable = generalAvailabilityGuess1 === -1 ?
-        false : generalAvailabilityGuess1.isBefore(dayjs());
+      // undefined === No .close date specified
+      const isNotGenerallyAvailable = generalAvailabilityGuess1 === undefined ?
+        true : generalAvailabilityGuess1.isAfter(dayjs());
 
       // Convert periods to the output objects (no dayjs())
       const outPeriods = periods.slice()
@@ -282,7 +288,7 @@ export async function getTLDsWithStatusPeriods() {
         tld: punycode.toUnicode(tld),
         spec13: type.trim() === 'Spec 13 - .BRAND TLD',
         periods: outPeriods,
-        isGenerallyAvailable
+        isNotGenerallyAvailable
       };
     })
     .filter(o => !!o);
@@ -348,7 +354,7 @@ export async function getTLDData(prevData) {
     .join(', ');
   process.stderr.write(`* gTLDs with no status: ${prettyTLDsWithNoStatus}\n`);
   const prettyTLDsWithNotPast = sunriseSunsetTLDs
-    .filter(o => !o.isGenerallyAvailable)
+    .filter(o => o.isNotGenerallyAvailable)
     .map(o => o.spec13 ? `*${chalk.gray(o.tld)}` : chalk.yellow(o.tld))
     .join(', ');
   process.stderr.write(`* gTLDs which haven't hit General Availability yet (*${chalk.gray('has spec 13')}): ${prettyTLDsWithNotPast}\n`);
@@ -361,12 +367,12 @@ export async function getTLDData(prevData) {
       const o = sunriseSunsetTLDs.find(o => o.tld === t.tld);
       if (!o) {
         // If not found, then it's not available
-        t.isInGeneralAvailability = false;
+        t.isNotInGeneralAvailability = false;
         return;
       }
 
       t.periods = o.periods;
-      t.isInGeneralAvailability = o.isGenerallyAvailable;
+      t.isNotInGeneralAvailability = o.isNotGenerallyAvailable;
     });
   process.stderr.write('Combined\n');
 
