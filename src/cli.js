@@ -56,7 +56,7 @@ async function main() {
     prevData = await readPrevious(process.stdin);
   }
   const outData = await getData(prevData);
-  process.stdout.write(JSON.stringify(tldObjs, null, 2));
+  process.stdout.write(JSON.stringify(outData, null, 2));
 }
 
 main();
