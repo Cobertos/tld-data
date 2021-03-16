@@ -566,14 +566,14 @@
     "tld": "alibaba",
     "type": "generic",
     "isInGeneralAvailability": false,
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
     "tld": "alipay",
     "type": "generic",
     "isInGeneralAvailability": false,
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -679,6 +679,13 @@
   {
     "tld": "amazon",
     "type": "generic",
+    "periods": [
+      {
+        "name": "Trademark Claims",
+        "open": 1615420800000,
+        "close": 1623024000000
+      }
+    ],
     "isInGeneralAvailability": false,
     "isBrand": true,
     "hasRestrictions": false
@@ -1546,7 +1553,7 @@
       },
       {
         "name": "Trademark Claims",
-        "open": 1612137600000
+        "open": 1622505600000
       },
       {
         "name": "Invitation Priority Access",
@@ -1575,7 +1582,7 @@
       {
         "name": "LRP #4",
         "open": 1600646400000,
-        "close": 1612051200000,
+        "close": 1622419200000,
         "type": "Limited Registration Period"
       }
     ],
@@ -1734,7 +1741,7 @@
         "type": "Limited Registration Period"
       }
     ],
-    "isInGeneralAvailability": false,
+    "isInGeneralAvailability": true,
     "isBrand": false,
     "hasRestrictions": false
   },
@@ -3065,13 +3072,6 @@
     "hasRestrictions": false
   },
   {
-    "tld": "caseih",
-    "type": "generic",
-    "isInGeneralAvailability": false,
-    "isBrand": true,
-    "hasRestrictions": false
-  },
-  {
     "tld": "cash",
     "type": "generic",
     "periods": [
@@ -3296,7 +3296,8 @@
       },
       {
         "name": "Trademark Claims",
-        "open": 1447027200000
+        "open": 1447027200000,
+        "close": 1613952000000
       }
     ],
     "isInGeneralAvailability": true,
@@ -4293,7 +4294,7 @@
         "type": "Limited Registration Period"
       }
     ],
-    "isInGeneralAvailability": false,
+    "isInGeneralAvailability": true,
     "isBrand": false,
     "hasRestrictions": false
   },
@@ -6512,7 +6513,7 @@
         "type": "Limited Registration Period"
       }
     ],
-    "isInGeneralAvailability": false,
+    "isInGeneralAvailability": true,
     "isBrand": false,
     "hasRestrictions": false
   },
@@ -7319,7 +7320,7 @@
         "close": 1619308800000
       }
     ],
-    "isInGeneralAvailability": false,
+    "isInGeneralAvailability": true,
     "isBrand": true,
     "hasRestrictions": false
   },
@@ -7779,7 +7780,7 @@
         "type": "Limited Registration Period"
       }
     ],
-    "isInGeneralAvailability": false,
+    "isInGeneralAvailability": true,
     "isBrand": false,
     "hasRestrictions": false
   },
@@ -11874,13 +11875,6 @@
     "hasRestrictions": false
   },
   {
-    "tld": "newholland",
-    "type": "generic",
-    "isInGeneralAvailability": false,
-    "isBrand": true,
-    "hasRestrictions": false
-  },
-  {
     "tld": "news",
     "type": "generic",
     "periods": [
@@ -14581,7 +14575,7 @@
       },
       {
         "name": "Trademark Claims",
-        "open": 1612137600000
+        "open": 1622505600000
       },
       {
         "name": "Invitation Priority Access",
@@ -14592,7 +14586,7 @@
       {
         "name": "Community Priority Period",
         "open": 1572912000000,
-        "close": 1612051200000,
+        "close": 1622419200000,
         "type": "Limited Registration Period"
       },
       {
@@ -15731,7 +15725,7 @@
         "type": "Limited Registration Period"
       }
     ],
-    "isInGeneralAvailability": false,
+    "isInGeneralAvailability": true,
     "isBrand": false,
     "hasRestrictions": false
   },
@@ -15990,6 +15984,24 @@
   {
     "tld": "spa",
     "type": "generic",
+    "periods": [
+      {
+        "name": "Sunrise",
+        "open": 1618876800000,
+        "close": 1621468800000
+      },
+      {
+        "name": "Trademark Claims",
+        "open": 1625097600000,
+        "close": 1632960000000
+      },
+      {
+        "name": "Landrush",
+        "open": 1621987200000,
+        "close": 1624492800000,
+        "type": "Limited Registration Period"
+      }
+    ],
     "isInGeneralAvailability": false,
     "isBrand": false,
     "hasRestrictions": false
@@ -16701,7 +16713,7 @@
     "tld": "taobao",
     "type": "generic",
     "isInGeneralAvailability": false,
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -17226,7 +17238,7 @@
     "tld": "tmall",
     "type": "generic",
     "isInGeneralAvailability": false,
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -17651,7 +17663,7 @@
     "tld": "tvs",
     "type": "generic",
     "isInGeneralAvailability": false,
-    "isBrand": false,
+    "isBrand": true,
     "hasRestrictions": false
   },
   {
@@ -19128,6 +19140,10 @@
     "isInGeneralAvailability": true,
     "isBrand": false,
     "hasRestrictions": false
+  },
+  {
+    "tld": "ישראל",
+    "type": "country-code"
   },
   {
     "tld": "موقع",
