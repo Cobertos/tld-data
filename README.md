@@ -23,38 +23,40 @@ Methodology:
 
 ```javascript
 {
-  // TLD, no leading '.', unicode (not punycode)
-  "tld": "accenture",
+  "generated": "2021-03-16T06:41:50-04:00",
+  "data": {
+    // TLD, no leading '.', unicode (not punycode)
+    "tld": "accenture",
 
-  // type of the TLD from IANA database
-  // ['generic', 'country-code', 'sponsored', 'infrastructure', 'generic-restricted', 'test']
-  // An explanation of each can be found: https://icannwiki.org/Generic_top-level_domain
-  "type": "generic",
+    // type of the TLD from IANA database
+    // ['generic', 'country-code', 'sponsored', 'infrastructure', 'generic-restricted', 'test']
+    // An explanation of each can be found: https://icannwiki.org/Generic_top-level_domain
+    "type": "generic",
 
-  // If present, is the generic TLD a generic brand TLD?
-  // More specifically, does the registry agreement for this TLD specify "Specification 13"
-  // or have an exemption to "Specification 9". Both of these prohibit the registry
-  // from giving domains to anyone but the registry and affiliates (no third parties).
-  "isBrand": true,
+    // If present, is the generic TLD a generic brand TLD?
+    // More specifically, does the registry agreement for this TLD specify "Specification 13"
+    // or have an exemption to "Specification 9". Both of these prohibit the registry
+    // from giving domains to anyone but the registry and affiliates (no third parties).
+    "isBrand": true,
 
-  // If present, are there any restrictions for registering the TLD?
-  // Only checks for "Specification 12" currently (see notes in code)
-  // Not super accurate yet, and not currently implemented for ccTLDs!
-  "hasRestrictions": false,
+    // If present, are there any restrictions for registering the TLD?
+    // Only checks for "Specification 12" currently (see notes in code)
+    // Not super accurate yet, and not currently implemented for ccTLDs!
+    "hasRestrictions": false,
 
-  // If the gTLD is in General Availability
-  // NOTE: This uses the end of the last listed period as there's no public data
-  // source for this...
-  // NOTE: omitted on non-generic TLDs
-  "isInGeneralAvailability": false,
+    // If the gTLD is in General Availability
+    // NOTE: This uses the end of the last listed period as there's no public data
+    // source for this...
+    // NOTE: omitted on non-generic TLDs
+    "isInGeneralAvailability": false,
 
-  // The periods of the gTLD, if any
-  // Currently just milliseconds since the Javascript Date() epoch
-  "periods": [{
-    "name": "Sunrise",
-    "open": 1397620800000,
-    "close": 1405396800000
-  }]
+    // The periods of the gTLD, in ISO8601 date format (no time)
+    "periods": [{
+      "name": "Sunrise",
+      "open": "2015-07-06",
+      "close": "2015-12-31"
+    }]
+  }
 }
 ```
 

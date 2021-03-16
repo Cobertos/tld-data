@@ -1,5 +1,17 @@
+import dayjs from 'dayjs';
 import argparse from 'argparse';
 import { getTLDData } from './fetch.js';
+
+/**
+ * Gets all the data + some metadata
+ */
+async function getData(prevData) {
+  const tldData = await getTLDData(prevData);
+  return {
+    generated: dayjs().format(),
+    data: tldData
+  };
+}
 
 // Reads full buffer out of stream
 async function read(stream) {
@@ -43,7 +55,7 @@ async function main() {
   if(args.stdin) {
     prevData = await readPrevious(process.stdin);
   }
-  const tldObjs = await getTLDData(prevData);
+  const outData = await getData(prevData);
   process.stdout.write(JSON.stringify(tldObjs, null, 2));
 }
 
