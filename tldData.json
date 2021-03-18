@@ -1,5 +1,5 @@
 {
-  "generated": "2021-03-16T07:23:32-04:00",
+  "generated": "2021-03-18T04:04:04-04:00",
   "data": [
     {
       "tld": "aaa",
@@ -6316,7 +6316,7 @@
       "tld": "flickr",
       "type": "generic",
       "isNotInGeneralAvailability": false,
-      "isBrand": false,
+      "isBrand": true,
       "hasRestrictions": false
     },
     {
@@ -11439,7 +11439,7 @@
         }
       ],
       "isNotInGeneralAvailability": false,
-      "isBrand": false,
+      "isBrand": true,
       "hasRestrictions": false
     },
     {
@@ -12276,7 +12276,7 @@
         }
       ],
       "isNotInGeneralAvailability": false,
-      "isBrand": false,
+      "isBrand": true,
       "hasRestrictions": false
     },
     {
@@ -14991,7 +14991,7 @@
         }
       ],
       "isNotInGeneralAvailability": true,
-      "isBrand": false,
+      "isBrand": true,
       "hasRestrictions": false
     },
     {
@@ -21151,13 +21151,13 @@
       "periods": [
         {
           "name": "Sunrise",
-          "open": "2021-05-03",
-          "close": "2021-07-06"
+          "open": "2021-08-30",
+          "close": "2021-10-29"
         },
         {
           "name": "Trademark Claims",
-          "open": "2021-07-27",
-          "close": "2021-10-26"
+          "open": "2021-11-22",
+          "close": "2022-02-20"
         },
         {
           "name": "LRP #1",
@@ -21173,14 +21173,14 @@
         },
         {
           "name": "LRP #2",
-          "open": "2021-06-03",
-          "close": "2021-07-06",
+          "open": "2021-09-30",
+          "close": "2021-10-29",
           "type": "Limited Registration Period"
         },
         {
           "name": "QLP #2",
           "open": "2021-02-04",
-          "close": "2021-07-06",
+          "close": "2021-10-29",
           "type": "Qualified Launch Program"
         }
       ],
