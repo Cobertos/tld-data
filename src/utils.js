@@ -1,4 +1,21 @@
 import chalk from 'chalk';
+import nodeFetch from 'node-fetch';
+import fetchRetry from 'fetch-retry';
+
+// A custom version of fetch() that retries 3 times at 1000ms on network errors
+// and 500 errors
+const _fetch = fetchRetry(nodeFetch); // 3 retries, 1000ms delays by default
+const fetch = (...args) => {
+  args[1] = Object.assign({}, {
+    ...{
+      // RetryOn error codes 500-511
+      retryOn: new Array(12).fill().map((_, i)=>i+500)
+    },
+    ...args[1]
+  });
+  return _fetch(...args);
+};
+export { fetch };
 
 export function diffArrayUnordered(actual, expected) {
   // In actual but not expected

@@ -8,12 +8,35 @@ import proxyquire from 'proxyquire';
 const readFile = promisify(fs.readFile);
 
 const fetchMock = _fetchMock.sandbox();
+// Stub out node-fetch with fetch-mock in utils for all tests
+const utils = proxyquire('../src/utils.js', { 'node-fetch': fetchMock });
+const { fetch } = utils;
 const { getTLDsFromRootZone, getTLDInfoFromIANADB, getTLDsWithStatusPeriods, 
-  gTLDInfoFromRegistryAgreement, getTLDData } = 
-  proxyquire('../src/fetch.js', { 'node-fetch': fetchMock });
+  gTLDInfoFromRegistryAgreement, getTLDData } =
+  proxyquire('../src/fetch.js', { './utils.js': utils });
 
 test.beforeEach('reset globals', (t) => {
   fetchMock.restore(); // Restore mocked endpoints
+});
+
+test.serial('fetch - Fetch multiple times if 500 error', async (t) => {
+  // arrange
+  let firstCall = false;
+  fetchMock.get('end:www.example.com', ()=>{
+    if (!firstCall) {
+      return 'succ';
+    }
+    firstCall = true;
+    return 502;
+  });
+
+  // act
+  const r = await fetch('www.example.com');
+  const txt = await r.text();
+
+  // assert
+  t.assert(txt === 'succ'); // Should have succeeded even after a 502
+
 });
 
 test.serial('getTLDsFromRootZone - Finds only TLDs', async (t) => {

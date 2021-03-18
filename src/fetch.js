@@ -1,13 +1,10 @@
-import nodeFetch from 'node-fetch';
 import dayjs from 'dayjs';
 import chalk from 'chalk';
 import jsdom from 'jsdom';
 import punycode from 'punycode';
 import mapLimit from 'async/mapLimit.js';
-import fetchRetry from 'fetch-retry';
 import { diffArrayUnordered, mapReduceToObj, arrayPrototypeUnique,
-  _assert } from './utils.js';
-const fetch = fetchRetry(nodeFetch); // 3 retries, 1000ms delays
+  _assert, fetch } from './utils.js';
 const { JSDOM } = jsdom;
 Array.prototype.unique = arrayPrototypeUnique;
 
