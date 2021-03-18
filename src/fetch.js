@@ -1,6 +1,7 @@
 import dayjs from 'dayjs';
 import chalk from 'chalk';
 import jsdom from 'jsdom';
+import os from 'os';
 import punycode from 'punycode';
 import mapLimit from 'async/mapLimit.js';
 import { diffArrayUnordered, mapReduceToObj, arrayPrototypeUnique,
@@ -135,25 +136,28 @@ export async function gTLDInfoFromRegistryAgreement(gTLD) {
     throw new Error(`Fetch for '${gTLD}' failed with '${resp.statusCode} ${resp.statusMessage}'`);
   }
   const text = await resp.text();
+  const dom = new JSDOM(text);
 
   process.stderr.write(`Parsing gTLD registry agreement page for ${gTLD}\n`);
-  const dom = new JSDOM(text);
-  if (!dom.window.document.querySelector('#agmthtml a')) {
-    console.log('Dumping dom in weird error case');
-    console.log(dom);
+  const agreementHTMLLinkEl = dom.window.document.querySelector('[data-radocumenttype="AGREEMENT-HTML"]');
+  if (!agreementHTMLLinkEl) {
+    process.stderr.write('Dumping dom in weird error case\n');
+    process.stderr.write('Site updated?\n');
+    process.stderr.write('===============================\n');
+    process.stderr.write(text);
+    process.stderr.write('===============================\n');
   }
-  _assert(dom.window.document.querySelector('#agmthtml a'), `'#agmthtml a' on ${gTLD} should be present`);
+  _assert(agreementHTMLLinkEl, `'[data-radocumenttype="AGREEMENT-HTML"]' on ${gTLD} should be present`);
 
-  const hasSpec13 = !!dom.window.document.querySelector('#spec13');
-  const hasSpec9Exemption = !!dom.window.document.querySelector('#spec9') &&
-    !dom.window.document.querySelector('#spec9').textContent.match(/withdrawal/i);
+  const hasSpec13 = !!dom.window.document.querySelector('[data-section="specification-13"]');
+  const hasSpec9Exemption = !!dom.window.document.querySelector('[data-section="notice-of-exemption"]') &&
+    !dom.window.document.querySelector('[data-section="notice-of-exemption"]').textContent.match(/withdrawal/i);
 
-  // It's a relative href to site root
-  const baseRegistryAgreementHTMLHref = dom.window.document.querySelector('#agmthtml a')
-    .getAttribute('href');
+  // This points to an ICANN CDN domain thing
+  const registryAgreementHTMLHref = agreementHTMLLinkEl.getAttribute('href');
 
   process.stderr.write(`Fetching gTLD registry agreement HTML for ${gTLD}\n`);
-  const resp2 = await fetch(`https://www.icann.org${baseRegistryAgreementHTMLHref}`);
+  const resp2 = await fetch(registryAgreementHTMLHref);
   if (!resp2.ok) {
     console.error(resp2);
     throw new Error(`Fetch2 for '${gTLD}' failed with '${resp2.statusCode} ${resp2.statusMessage}'`);
@@ -399,7 +403,8 @@ export async function getTLDData(prevData) {
     ...prevData
   };
 
-  await mapLimit(tlds, 5, async o => {
+  const poolWorkerNum = os.cpus().length;
+  await mapLimit(tlds, poolWorkerNum, async o => {
     if(manualData[o.tld]) {
       Object.assign(o, manualData[o.tld]);
       return;

@@ -91,7 +91,7 @@ test.serial('gTLDInfoFromRegistryAgreement - Parses certain specifications from 
   // arrange
   fetchMock.get('end:www.icann.org/en/about/agreements/registries/dummytld1',
     await readFile('test/fetchDummy/icann.org_en_about_agreements_registries_dummytld1.html', 'utf-8'));
-  fetchMock.get('end:www.icann.org/agreement/dummytld1',
+  fetchMock.get('end:www.example.com/agreement/dummytld1',
     await readFile('test/fetchDummy/icann.org_agreement_dummytld1.html', 'utf-8'));
 
   // act

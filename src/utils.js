@@ -2,12 +2,17 @@ import chalk from 'chalk';
 import nodeFetch from 'node-fetch';
 import fetchRetry from 'fetch-retry';
 
-// A custom version of fetch() that retries 3 times at 1000ms on network errors
+// A custom version of fetch() that retries 4 times at exponential on network errors
 // and 500 errors
-const _fetch = fetchRetry(nodeFetch); // 3 retries, 1000ms delays by default
+const _fetch = fetchRetry(nodeFetch);
 const fetch = (...args) => {
   args[1] = Object.assign({}, {
     ...{
+      retries: 4,
+      // Exponential backoff
+      retryDelay: function(attempt, error, response) {
+        return Math.pow(3, attempt) * 10000; // 10s, 30s, 90s, 270s
+      },
       // RetryOn error codes 500-511
       retryOn: new Array(12).fill().map((_, i)=>i+500)
     },
