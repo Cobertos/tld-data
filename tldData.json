@@ -1,5 +1,5 @@
 {
-  "generated": "2021-03-22T01:23:19+00:00",
+  "generated": "2021-03-28T05:20:34+00:00",
   "data": [
     {
       "tld": "aaa",
@@ -6660,13 +6660,6 @@
         }
       ],
       "isNotInGeneralAvailability": true,
-      "isBrand": true,
-      "hasRestrictions": false
-    },
-    {
-      "tld": "fujixerox",
-      "type": "generic",
-      "isNotInGeneralAvailability": false,
       "isBrand": true,
       "hasRestrictions": false
     },
