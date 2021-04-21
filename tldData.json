@@ -1,5 +1,5 @@
 {
-  "generated": "2021-04-11T05:21:55+00:00",
+  "generated": "2021-04-21T18:46:54+00:00",
   "data": [
     {
       "tld": "aaa",
@@ -9018,13 +9018,6 @@
       "hasRestrictions": false
     },
     {
-      "tld": "iveco",
-      "type": "generic",
-      "isNotInGeneralAvailability": false,
-      "isBrand": true,
-      "hasRestrictions": false
-    },
-    {
       "tld": "jaguar",
       "type": "generic",
       "periods": [
@@ -11708,19 +11701,6 @@
       "hasRestrictions": true
     },
     {
-      "tld": "nationwide",
-      "type": "generic",
-      "periods": [
-        {
-          "name": "Trademark Claims",
-          "open": "2017-05-09"
-        }
-      ],
-      "isNotInGeneralAvailability": true,
-      "isBrand": true,
-      "hasRestrictions": false
-    },
-    {
       "tld": "natura",
       "type": "generic",
       "periods": [
@@ -12472,19 +12452,6 @@
       ],
       "isNotInGeneralAvailability": false,
       "isBrand": false,
-      "hasRestrictions": false
-    },
-    {
-      "tld": "onyourside",
-      "type": "generic",
-      "periods": [
-        {
-          "name": "Trademark Claims",
-          "open": "2017-05-09"
-        }
-      ],
-      "isNotInGeneralAvailability": true,
-      "isBrand": true,
       "hasRestrictions": false
     },
     {
