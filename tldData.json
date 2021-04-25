@@ -1,5 +1,5 @@
 {
-  "generated": "2021-04-21T18:46:54+00:00",
+  "generated": "2021-04-25T05:27:51+00:00",
   "data": [
     {
       "tld": "aaa",
@@ -16045,24 +16045,6 @@
     {
       "tld": "spot",
       "type": "generic",
-      "isNotInGeneralAvailability": false,
-      "isBrand": false,
-      "hasRestrictions": false
-    },
-    {
-      "tld": "spreadbetting",
-      "type": "generic",
-      "periods": [
-        {
-          "name": "Sunrise",
-          "open": "2015-10-08",
-          "close": "2015-11-08"
-        },
-        {
-          "name": "Trademark Claims",
-          "open": "2015-11-09"
-        }
-      ],
       "isNotInGeneralAvailability": false,
       "isBrand": false,
       "hasRestrictions": false
